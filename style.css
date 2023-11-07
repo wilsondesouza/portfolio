@@ -49,7 +49,7 @@ body {
 
 .sidebar nav ul li {
     position: relative;
-    display: inline-block;
+    display: grid;
     padding-right: 70px;
     margin-left: 1rem;
 }
@@ -68,7 +68,7 @@ body {
     grid-area: menu;
     margin-top: 50rem;
     width: 150px;
-    height: 850px;
+    height: 1500px;
     padding: 20px;
     overflow-y: auto;
 }
@@ -93,21 +93,19 @@ body {
 
 .header {
     grid-area: header;
-    margin-top: 15rem;
+    margin-top: 7rem;
     padding: 70px;
     text-align: center;
     position: fixed;
     width: 100%;
-    height: 1525px;
+    height: 3000px;
     top: 0;
     left: 0;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
 }
 
-.header.scroll {
-    transform: translateX(75rem);
-}
+
 
 .header.scroll {
     grid-area: header;
@@ -115,9 +113,9 @@ body {
     margin-top: 0rem;
     text-align: center;
     width: 345px;
-    height: 800px;
+    height: 3000px;
     overflow-y: auto;
-    
+
 }
 
 .header.scroll .header-info,
@@ -153,7 +151,7 @@ body {
 }
 
 .header.scroll .btncont {
-    display: block;
+    display: grid;
     width: 4rem;
     height: 4rem;
     margin-top: 23rem;
@@ -167,9 +165,7 @@ body {
     border: none;
 }
 
-.dropdown-menu.show {
-    background: var(--background-light);
-}
+
 
 button#btn {
     display: inline-flex;
@@ -189,11 +185,16 @@ button#english {
 
 /* main-content */
 
+section {
+    display: grid;
+    justify-items: center;
+}
+
 .main-content {
     grid-area: main;
     padding-top: 60px;
     padding-left: 90px;
-    padding-right: 185px;
+    padding-right: 180px;
 }
 
 .main-content p {
@@ -233,10 +234,17 @@ i.fa-solid {
 }
 
 /* Project and Link Buttons */
-.project-buttons a,
-.link-buttons a {
-    display: inline-block;
+.project-buttons a {
+    display: inline-grid;
     padding: 6px 12px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link-buttons a {
+    display: inline-grid;
+    padding: 12px 12px;
     margin: 5px;
     text-decoration: none;
     border-radius: 5px;
@@ -254,7 +262,7 @@ i.fa-solid {
 
 .maisProjetos {
     margin-top: 2rem;
-    display: inline-block;
+    display: grid;
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
@@ -289,6 +297,8 @@ footer {
     --colorButton-dark-hover: #CECECE;
 }
 
+
+
 .sidebar nav ul li a {
     background-color: transparent;
     color: white;
@@ -307,7 +317,7 @@ footer {
 }
 
 .header,
-.sidebar{
+.sidebar {
     background: var(--background-dark);
     color: var(--text-dark);
     transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
@@ -335,6 +345,10 @@ footer {
 
 .project-buttons .card-body {
     transition: .2s ease-in-out, background-color 1.5s ease-in-out, color 1.5s ease-in-out;
+}
+
+.dropdown-menu.show {
+    background: var(--background-light);
 }
 
 .main-content.scroll,
@@ -404,8 +418,8 @@ header .btn:hover {
     .main-content {
         grid-area: main;
         padding-top: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 18px;
+        padding-right: 17px;
     }
 
     .sidebar nav ul {
@@ -423,16 +437,30 @@ header .btn:hover {
         padding: 0px;
     }
 
-    #react-image, #flutter-image {
-        width: 33.5vh;
+    .header.scroll {
+        transform: translateX(75rem);
     }
 
-    #footer {
-        margin-left: 3rem;
+    .card-body {
+        display: grid;
+        justify-items: center;
     }
+
+    @media (max-width: 767px) {
+
+        #react-image,
+        #flutter-image {
+            width: 33.5vh;
+        }
+    }
+
+
 
     @media (min-width: 768px) and (max-width: 912px) {
-        .header a, .header button, p {
+
+        .header a,
+        .header button,
+        p {
             font-size: 22px;
         }
     }
@@ -440,48 +468,75 @@ header .btn:hover {
 
 @media (min-width: 1024px) {
     .grid-container {
-        grid-template-columns: auto 1fr 1fr 1fr auto auto;
+        grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto auto auto auto;
         grid-template-areas:
-            'menu  main main main header header'
-            'menu footer footer footer footer footer';
+            'menu  main   header '
+            'menu footer   header ';
     }
+
     #flutter-a {
         display: flex;
         justify-content: flex-start;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 2561px) {
+
+@media (min-width: 1024px) and (max-width: 2559px) {
 
     .sidebar.scroll {
         width: 120px;
         height: 1525px;
     }
+
     .sidebar.scroll nav ul {
         list-style: none;
         margin-left: -1rem;
-        
+        margin-top: 10rem;
+
     }
+
     .header.scroll {
         height: 1525px;
-        transform: translateX(70.5rem);
+        transform: translateX(67.5rem);
     }
-    .main-content {
-        padding-right: 190px;
-    }
-
-
 
     @media (min-width: 1024px) and (max-width: 1280px) {
         .header.scroll {
-            transform: translateX(57.2rem);
+            transform: translateX(42.2rem);
+        }
+
+        .sidebar.scroll nav ul {
+            margin-top: 5rem;
         }
     }
 
     .main-content {
-        padding-left: 70px;
+        padding-left: 65px;
     }
 
 }
 
+@media (min-width: 2560px) {
+    * {
+        font-size: 2vh;
+    }
+
+    .sidebar.scroll {
+        width: 200px;
+    }
+
+    .header {
+        margin-top: 14rem;
+    }
+
+    .header.scroll {
+        transform: translateX(65.2rem);
+        width: 650px;
+    }
+
+    .main-content {
+        padding-right: 335px;
+        padding-left: 110px;
+    }
+}

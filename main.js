@@ -125,9 +125,9 @@ function checkHeaderPosition() {
         header.classList.add('scroll');
         sidebar.classList.add('scroll');
         maincontent.classList.add('scroll');  
-        home.style.display = 'block';
-        lista.style.display = 'block';
-        lista.style.marginLeft = '-1rem';
+        home.style.display = 'grid';
+        lista.style.display = 'grid';
+ 
         const paragrafos = sidebarScroll.querySelectorAll('p');
         paragrafos.forEach((paragrafo, index) => {
             if (textos[index]) {
@@ -141,7 +141,7 @@ function checkHeaderPosition() {
         maincontent.classList.remove('scroll');
         home.style.display = 'none';
         lista.style.display = 'flex';
-        lista.style.marginLeft = '-4rem';
+
         const paragrafos = sidebarScroll.querySelectorAll('p');
         paragrafos.forEach(paragrafo => {
             paragrafo.textContent = '';
@@ -161,7 +161,7 @@ function verificarLarguraDaTela() {
     const reactImage = document.getElementById("react-image");
     const flutterImage = document.getElementById("flutter-image");
 
-    if (larguraDaTela < 1023) { 
+    if (larguraDaTela < 767) { 
         reactImage.src = "assets/imgs/react/rm6.png"
         flutterImage.src = "assets/imgs/flutter/fm1.png"
     } else {

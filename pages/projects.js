@@ -111,8 +111,8 @@ function checkHeaderPosition() {
         header.classList.add('scroll');
         sidebar.classList.add('scroll');
         maincontent.classList.add('scroll');
-        myProjects.style.display = 'block';
-        lista.style.display = 'block';
+        myProjects.style.display = 'grid';
+        lista.style.display = 'grid';
         aboutMe.href = '#';
         const paragrafos = sidebarScroll.querySelectorAll('p');
         paragrafos.forEach((paragrafo, index) => {
