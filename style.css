@@ -42,10 +42,12 @@ body {
 
 .sidebar nav ul {
 
-    margin-left: 6rem;
+    margin-left: -2rem;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .sidebar nav ul li {
     position: relative;
