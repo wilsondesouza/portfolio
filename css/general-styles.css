@@ -1,0 +1,186 @@
+/* Description: General Styles CSS file */
+
+/*****************************************
+Table Of Contents:
+- General Styles
+
+/**************************/
+/*     General Styles     */
+/**************************/
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+body,
+p {
+	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+h1 {
+	color: white;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+	font-family: "Poppins"
+}
+h2 {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-family: "Poppins"
+}
+h3 {
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	font-family: "Poppins"
+}
+h4 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-family: "Poppins"
+}
+h5 {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+	font-family: "Poppins"
+}
+h6 {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.375rem;
+	font-family: "Poppins"
+}
+.p-large {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+.p-small {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+.li-space-lg li {
+	margin-bottom: 0.5rem;
+}
+a {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+}
+.no-line {
+	text-decoration: none;
+}
+.no-line:hover {
+	text-decoration: none;
+}
+.blue {
+	color: #2259ec;
+}
+.bg-gray {
+	background-color: #f7f9fb;
+}
+
+.section-divider {
+	display: block;
+	height: 1px;
+	margin: 0;
+	border: none;
+	background-color: #d3dae2;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #0b36a8;
+	background-color: #0b36a8;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-solid-reg:hover {
+	background-color: transparent;
+	color: #0b36a8;
+	/* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #0b36a8;
+	background-color: #0b36a8;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #0b36a8;
+	/* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+}
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-outline-reg:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-outline-lg:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.btn-outline-sm {
+	display: inline-block;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border: 1px solid #24262a;
+	background-color: transparent;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-outline-sm:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.label-control {
+	position: absolute;
+	top: 0.875rem;
+	left: 1.5rem;
+	color: #7d838a;
+	opacity: 1;
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	cursor: text;
+	transition: all 0.2s ease;
+}

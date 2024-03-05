@@ -1,0 +1,113 @@
+/* Description: Theme CSS file */
+
+/*****************************************
+Table Of Contents:
+- Themes (Light and Dark)
+******************************************/
+
+/* Temas Claro e Escuro */
+
+:root {
+    --background-light: white;
+    --text-light: black;
+    --background-dark: #24262a;
+    --text-dark: white;
+    --backgroundButton-light-hover: green;
+    --backgroundButton-dark-hover: #0d6efd;
+    --colorButton-light-hover: #24262a;
+    --colorButton-dark-hover: #CECECE;
+}
+
+/**************************/
+/*     General Styles     */
+/**************************/
+p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outline-sm {
+	color: var(--background-dark);
+}
+
+/**********************/
+/*     Navigation     */
+/**********************/
+.navbar, nav.navbar.navbar-expand-lg.fixed-top.navbar-dark  {
+	background-color: var(--background-dark);
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
+}
+.navbar .logo-text, .navbar .fa-stack:hover .fa-stack-2x {
+	color: var(--text-dark);
+}
+
+.offcanvas-collapse , .btn-outline-reg:hover, .btn-outline-lg:hover, .btn-outline-sm:hover{
+	background-color: var(--background-dark);
+}
+
+.navbar .nav-item .nav-link {
+	color: var(--text-dark);
+}
+.navbar .nav-item.dropdown.show .nav-link,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+	color: var(--backgroundButton-dark-hover);
+}
+.navbar .fa-stack-2x {
+	color: var(--backgroundButton-dark-hover);
+	transition: all 0.2s ease;
+}
+.navbar .fa-stack-1x {
+	color: var(--text-dark);
+	transition: all 0.2s ease;
+}
+.navbar .fa-stack:hover .fa-stack-1x {
+	color: var(--backgroundButton-dark-hover);
+}
+
+/*****************/
+/*     About     */
+/*****************/
+.basic-1 .time {
+	color: var(--backgroundButton-dark-hover);
+}
+#about {
+	background-color: var(--background-light);
+}
+#about, #about p {
+    color: var(--text-light);
+}
+
+/********************/
+/*     Projects     */
+/********************/
+
+#projects h2, #projects h3{
+	color: var(--text-light);
+
+}
+
+/*****************/
+/*     Works     */
+/*****************/
+.basic-4, .basic-3 {
+	background-color: var(--background-light);
+}
+
+/******************/
+/*     Footer     */
+/******************/
+.footer {
+	background-color: var(--background-dark);
+}
+.footer .fa-stack .fa-stack-1x, .footer .fa-stack:hover .fa-stack-2x {
+	color: var(--text-dark);
+}
+
+/*********************/
+/*     Copyright     */
+/*********************/
+.copyright {
+	background-color: var(--background-dark);
+}
+.copyright .p-small {
+	color: var(--text-dark);
+}
+.copyright a {
+	color: var(--text-dark);
+}
