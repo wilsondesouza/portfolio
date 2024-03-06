@@ -52,17 +52,17 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Início <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="#header" id="inicio-nav">Início <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">Sobre</a>
+                        <a class="nav-link page-scroll" href="#about" id="sobre-nav">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projetos</a>
+                        <a class="nav-link page-scroll" href="#projects" id="projetos-nav">Projetos</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href=".footer">Contato</a>
+                        <a class="nav-link page-scroll" href=".footer" id="contato-nav">Contato</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
@@ -123,7 +123,10 @@
     <!-- Home Social-->        
     <ul class="home-social">
         <li>
-            <a id="theme-toggle" type="button"><i class="fa fa-moon" aria-hidden="true"></i></i></a>
+            <a id="theme-toggle" type="button"><i class="fa-solid fa-moon" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a id="botãoIdioma" type="button"><i aria-hidden="true"><img id="flag" style="margin-top: -0.1rem; margin-right: 0.01rem;" src="assets/images/estados-unidos.png"></i></a>
         </li>
         <br><br>
         <li>
@@ -138,6 +141,11 @@
         <li>
             <a href="https://www.youtube.com/@juninholett/videos" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
         </li>
+        <li>
+            <a href="mailto:wilson.de.souza.junior@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+        </li>
+        
+
     </ul> 
 
     <!-- About-->
@@ -146,8 +154,8 @@
             <div class="row">
                 <div class="row-lg-4">
                     <div class="text-container first">
-                        <h2>Olá, meu nome é Wilson.</h2>
-                        <p>De forma sucinta, posso dizer que me considero uma pessoa organizada e
+                        <h2 id="hello">Olá, meu nome é Wilson.</h2>
+                        <p id="about">De forma sucinta, posso dizer que me considero uma pessoa organizada e
                             sistemática, ética e profissional, investigativa, convencional e realístico (Referências ao
                             teste de Holland).
                             <br> <br>
@@ -165,7 +173,7 @@
                     <div class="text-container second">
                         <div class="time">2023 - Presente</div>
                         <h6>Freelance Developer</h6>
-                        <p>Trabalhando em meus próprios projetos pessoais e para pequenos comerciantes da região</p>              
+                        <p id="freelance">Trabalhando em meus próprios projetos pessoais e para pequenos comerciantes da região</p>              
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -183,9 +191,7 @@
 
     <!-- Details -->
 	<div class="split">
-		<div class="area-2 bg-gray">
-            
-       
+		<div class="area-2">                
             <div class="container">    
                 <div class="row">
                     <div class="col-lg-12">     
@@ -221,7 +227,7 @@
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
 	
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
             <div class="container">    
                 <div class="row">
                     <div class="col-lg-12">     
@@ -229,17 +235,17 @@
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                             <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                                 <li class="nav-item w-50">
-                                    <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Educação</button>
+                                    <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1" id="education">Educação</button>
                                 </li>
                                 <li class="nav-item w-50">
-                                    <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Certificados</button>
+                                    <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2" id="certificates">Certificados</button>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane fade show p-0 active">
                                     <div class="row gy-5 gx-4">
                                         <div class="col-sm-12">
-                                            <h5 style="width: max-content;">Engenharia da Computação</h5>
+                                            <h5 style="width: max-content;" id="engenharia">Engenharia da Computação</h5>
                                             <hr class="text-primary my-2">
                                             <p class="text-primary mb-1">2023 - 2025</p>
                                             <h6 class="mb-0">Descomplica</h6>
@@ -248,7 +254,7 @@
                                            
                                         </div>
                                         <div class="col-sm-6">
-                                            <h5>Logística</h5>
+                                            <h5 id="logistica">Logística</h5>
                                             <hr class="text-primary my-2">
                                             <p class="text-primary mb-1">2016 - 2020</p>
                                             <h6 class="mb-0">Estácio de Sá</h6>
@@ -265,7 +271,7 @@
                                             <h6 class="mb-0">Instituto Nu</h6>
                                         </div>
                                         <div class="col-sm-6">
-                                            <h5>Desenvolvimento Java com Cloud</h5>
+                                            <h5 id="dev-java">Desenvolvimento Java com Cloud</h5>
                                             <hr class="text-primary my-2">
                                             <p class="text-primary mb-1">2023</p>
                                             <h6 class="mb-0">dio</h6>
@@ -277,7 +283,7 @@
                                             <h6 class="mb-0">Cisco</h6>
                                         </div>
                                         <div class="col-sm-6">
-                                            <h5>Desenvolvimento Mobile com Flutter</h5>
+                                            <h5 id=dev-flutter>Desenvolvimento Mobile com Flutter</h5>
                                             <hr class="text-primary my-2">
                                             <p class="text-primary mb-1">2023</p>
                                             <h6 class="mb-0">Santander</h6>
@@ -301,8 +307,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Projetos</h2>
-                    <p class="p-heading">A seguir deixarei alguns projetos que já desenvolvi. Desde projetos
+                    <h2 class="h2-heading" id="projects-title">Projetos</h2>
+                    <p class="p-heading" id="projects-paragraph">A seguir deixarei alguns projetos que já desenvolvi. Desde projetos
                         simples, práticos, funcionais até os mais complexos.
                         <br>
                         Alguns projetos foram construídos para
@@ -323,7 +329,7 @@
                             </a>
                         </div>
                     </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Descubra seu dano, <strong>Detalhes:</strong> Aplicativo desktop programado em Python utilizando a biblioteca Custom Tkinter para a criação da interface gráfica. Foram utilizados dicionários para buscar e retornar valores e listas para a geração dos botões.</p>
+                        <p><strong>Projeto:</strong> Descubra seu dano,<strong>Detalhes:</strong><span id="python-details">Aplicativo desktop programado em Python utilizando a biblioteca Custom Tkinter para a criação da interface gráfica. Foram utilizados dicionários para buscar e retornar valores e listas para a geração dos botões.</span></p>
                     </div> <!-- end of text-container -->
                     <div class="text-container">
                         <h3>React</h3>
@@ -332,17 +338,16 @@
                                 <img class="img-fluid" src="assets/images/r6.png" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Universo do Saber, <strong>Detalhes:</strong> Site construído para completar o curso Instituto Nu. Utilizado biblioteca React para deixar o site reativo e interativo.
-                            JavaScript vanilla também foi utilizado para aplicar algumas lógicas no Carrinho de Compras e na alteração de Temas.</p>
+                        <p><strong>Projeto:</strong> Universo do Saber,<strong>Detalhes:</strong><span id="react-details">Site construído para completar o curso Instituto Nu. Utilizado biblioteca React para deixar o site reativo e interativo. JavaScript vanilla também foi utilizado para aplicar algumas lógicas no Carrinho de Compras e na alteração de Temas.</span></p>
                     </div> <!-- end of text-container -->
                     <div class="text-container">
-                        <h3>JavaScript</h3>
+                        <h3>Flutter</h3>
                         <div class="image-container">
-                            <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
-                                <img class="img-fluid" src="assets/images/javascript.png" alt="alternative">
+                            <a href="https://github.com/wilsondesouza/guarda_dados" target="_blank">
+                                <img class="img-fluid" src="assets/images/f1.png" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong> Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário</p>
+                        <p><strong>Projeto:</strong>Guarda Dados,<strong>Detalhes:</strong><span id="flutter-details">Aplicativo feito em Flutter para Android. Construído inicialmente para sanar necessidade de um comerciante local, e posteriormente adaptado para uso pessoal. Utiliza de algumas dependências como local-auth para biometria, shared-preferences para persistência de dados e provider para reutiliza widgets. </span></p>
                     </div> <!-- end of text-container -->
                    
                 </div> <!-- end of col -->
@@ -363,17 +368,17 @@
                                 <img class="img-fluid" src="assets/images/unity.png" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong> FPS Game construído na engine Unity</p>
+                        <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong><span id="unity-details">Jogo desenvolvido em Unity com C#. É um jogo de tiro 3D simples com um personagem que pode salta, mover, pegar itens e destruir inimigos. O jogo tem um menu simples e uma tela de "game over"</span></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
                     <div class="text-container">
                         <div class="image-container">
-                            <a href="https://github.com/wilsondesouza/guarda_dados" target="_blank">
-                                <img class="img-fluid" src="assets/images/f1.png" alt="alternative">
+                            <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
+                                <img class="img-fluid" src="assets/images/javascript.png" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Guarda Dados, <strong>Detalhes:</strong> Aplicativo feito em Flutter para Android. Construído inicialmente para sanar necessidade de um comerciante local, e posteriormente adaptado para uso pessoal.</p>
+                        <p><strong>Projeto:</strong>Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong><span id="javascript-details">Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário.</span></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-4">
@@ -383,14 +388,16 @@
                                 <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="alternative">
                             </a>
                         </div> <!-- end of image-container -->
-                        <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong> Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</p>
+                        <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong><span id="chat-details">Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</span></p>
                     </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <a href="https://github.com/wilsondesouza?tab=repositories" class="btn btn-primary py-3 px-4 me-5" id="maisProjetos">Mais Projetos</a>
-            </div> <!-- end of row -->
-            
+                </div> <!-- end of col -->        
+            </div> <!-- end of row -->        
     </div> <!-- end of basic-4 -->
     <!-- end of works -->
+
+    <div id="maisProjetos">
+        <a href="https://github.com/wilsondesouza?tab=repositories" class="btn btn-primary py-3 px-4 me-5" id="mais-projetos">Mais Projetos</a>
+    </div>
 
     </div> <!-- end of cards-1 -->
     <!-- end of testimonials -->
@@ -408,7 +415,8 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <div class="row">
+            <p id="contact-paragraph">Estou disponível para contato, seja para oportunidades profissionais ou para uma equipe de estudos e aperfeiçoamento.</p>
+            <div class="row"> 
                 <div class="col-lg-12">
                     <div class="social-container">
                         <span class="fa-stack">
@@ -436,6 +444,12 @@
                                 <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
                         </span>
+                        <span class="fa-stack">
+                            <a title="Youtube" href="mailto:wilson.de.souza.junior@gmail.com" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x"></i>
+                            </a>
+                        </span>
                     </div> <!-- end of social-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -449,7 +463,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">2023-2024 <a class="no-line" href="#your-link">Desenvolvido por @wilsondesouza</a></p>
+                    <p class="p-small" >2023-2024 <a class="no-line" href="#your-link" id="developer">Desenvolvido por @wilsondesouza</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -457,7 +471,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small"> Hospedado em <a class="no-line" href="https://themewagon.com/">GitHub Pages</a></p>
+                    <p class="p-small" id="host"> Hospedado em <a class="no-line" href="https://themewagon.com/">GitHub Pages</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -472,12 +486,16 @@
     	
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/theme.js"></script> 
-    <script src="js/scripts.js"></script> 
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <!-- Embedded -->
     <script src="https://kit.fontawesome.com/754cc50534.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Personal -->
+    <script src="js/theme.js"></script> 
+    <script src="js/scripts.js"></script> 
+    <script src="js/main.js"></script>
+    
 
 
 

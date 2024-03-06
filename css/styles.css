@@ -5,6 +5,7 @@ Table Of Contents:
 - Loading
 - Navigation
 - Header
+- Home Social
 - About
 - Services
 - Details
@@ -217,7 +218,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
     margin: 0;
     position: fixed; /* Alterado para fixed */
     top: 50%;
-    right: 2rem;
+    right: 1rem;
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
@@ -384,7 +385,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 #maisProjetos{
 	display: flex;
     justify-content: center;
-	width: fit-content
+	margin-left: 2rem;
 }
 
 /* Hover Animation */

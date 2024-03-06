@@ -31,43 +31,7 @@
     })
 
 
-    // Carregamento da página
-    document.addEventListener("DOMContentLoaded", function() {
-        // Define o tempo de exibição da tela de carregamento em milissegundos (5000 = 5 segundos)
-        const tempoExibicao = 2000;
-    
-        // Adiciona a classe 'loaded' ao 'body' após o tempo definido
-        setTimeout(function() {
-            document.body.classList.add("loaded");
-        }, tempoExibicao);
-    });
-    
-    
-    // Função para exibir o texto letra por letra
-    function typeText() {
-        const texto = "Desenvolvedor   /   Engenheiro da Computação.";
-        const typingTextElement = document.getElementById("typing-text");
-        let index = 0;
-
-        // Função  para limpar o texto
-        function clearText() {
-            typingTextElement.textContent = "";
-            setTimeout(typeText, 1000); 
-        }
-
-        // Função para adicionar o texto letra por letra
-        function addText() {
-            if (index < texto.length) {
-                typingTextElement.textContent += texto.charAt(index);
-                index++;
-                setTimeout(addText, 100);
-            } else {
-                setTimeout(clearText, 3000); // Limpa o texto após 3 segundos
-            }
-        }
-        setTimeout(addText, 3000);
-    }
-    typeText();
+    /
 
 
     // hover in desktop mode
