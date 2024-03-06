@@ -59,17 +59,20 @@
     const chatDetails = document.getElementById('chat-details');
     const maisProjetos = document.getElementById('mais-projetos');
     const contactParagraph = document.getElementById('contact-paragraph');
-    const flag = document.getElementById('flag');
+    const developer = document.getElementById('developer');
+    const host = document.getElementById('host');
+    
 
         // Captar ID dos botões de alterar idioma
         // Capture buttons ID to change language
     const botaoMudar = document.getElementById('english');
     const botaoRestaurar = document.getElementById('portuguese');
     const botaoIdioma = document.getElementById('botãoIdioma');
+    const flag = document.getElementById('flag');
     
         // Guardar texto original (Em português)
         // Save original text (In Portuguese)
-    const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, hello.textContent, /*about.innerHTML*/, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent];
+    const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, hello.textContent, /*about.innerHTML*/, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent,];
 
         // Alterar conteúdo dos textos parar inglês
         // Change texts content to English
@@ -100,7 +103,9 @@
         javascriptDetails.textContent = 'Webgame with simple HTML construction, some CSS stylings and JavaScript programming to interact with the user.';
         chatDetails.textContent = 'Application using React to consume the Open Ai API to simulate a generative AI of texts.';
         maisProjetos.textContent = 'More Projects';
-        contactParagraph = 'I am available for contact, whether for professional opportunities or for a study and improvement team.';
+        contactParagraph.textContent = 'I am available for contact, whether for professional opportunities or for a study and improvement team.';
+        developer.textContent = '2023-2024 • Developed by @wilsondesouza';
+        host.textContent = 'Hosted in GitHub Pages';
     }
 
         // Retornar conteúdo dos textos parar português
@@ -132,7 +137,9 @@
         javascriptDetails.textContent = conteudoOriginal[19];
         chatDetails.textContent = conteudoOriginal[20];
         maisProjetos.textContent = conteudoOriginal[21];
-        contactParagraph = conteudoOriginal[22];
+        contactParagraph.textContent = conteudoOriginal[22];
+        developer.textContent = conteudoOriginal[23];
+        host.textContent = conteudoOriginal[24];
     }
 
     botaoMudar.addEventListener('click', alterarConteudo);
@@ -144,5 +151,17 @@
         } else {
             flag.src = "../assets/images/estados-unidos.png";
             restaurarConteudo();
+        }
+    });
+
+    /* Back To Top Button */
+    // create the back to top button
+    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+    var amountScrolled = 700;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('a.back-to-top').fadeIn('500');
+        } else {
+            $('a.back-to-top').fadeOut('500');
         }
     });

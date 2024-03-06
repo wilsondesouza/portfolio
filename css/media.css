@@ -8,12 +8,51 @@ Table Of Contents:
 /*************************/
 /*     Media Queries     */
 /*************************/
+
+
+@media (max-width: 363px) {
+	body {
+		width: 370px !important;
+	}
+}
+/* Max-width 375px */
+@media (max-width: 375px) {
+	.download-button {
+		margin-top: -1rem;
+		color: white;
+	}
+	a#curriculum {
+		height: 58px !important;
+		width: 145px !important;
+		padding-top: 0.3rem !important;
+	}
+}
+/* Max-width 768px */
+@media (max-width: 768px) {
+	nav.navbar.navbar-expand-lg.fixed-top.navbar-dark {
+		background-color: #24262a !important;
+	}
+	.social{
+		display: none;
+	}
+}
+
+/*Width 768px */
+@media (width: 768px){
+	h1.display-3 {
+		display: inline;
+	}
+}
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 	/* Header */
 	.header {
 		padding-top: 11rem;
 		padding-bottom: 9rem;
+	}
+	.header h1.display-3 {
+		width: max-content;
 	}
 }
 

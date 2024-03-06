@@ -184,9 +184,7 @@ body.loaded .content {
 	margin-bottom: 1.75rem;
 	color: #ffffff;
 }
-.header h1.display-3 {
-	width: max-content;
-}
+
 .header .btn-solid-lg:hover {
 	border: 1px solid #ffffff;
 	color: #ffffff;
@@ -196,6 +194,12 @@ body.loaded .content {
 	border: none;
 	color: #ffffff;
 }
+
+a#curriculum {
+	height: 58px !important;
+	width: 145px !important;
+}
+
 .header .btn-outline-lg:hover {
 	background: transparent;
 	color: #9c9ead;
