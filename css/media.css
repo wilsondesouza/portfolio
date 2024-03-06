@@ -9,7 +9,7 @@ Table Of Contents:
 /*     Media Queries     */
 /*************************/
 
-
+/* Max-width 363px */
 @media (max-width: 363px) {
 	body {
 		width: 370px !important;
@@ -26,7 +26,18 @@ Table Of Contents:
 		width: 145px !important;
 		padding-top: 0.3rem !important;
 	}
+	.header {
+		height: 120%;
+	}
 }
+
+/* Min-width 376px */
+@media (min-width: 376px) {
+	.header {
+		height: 100%;
+	}
+}
+
 /* Max-width 768px */
 @media (max-width: 768px) {
 	nav.navbar.navbar-expand-lg.fixed-top.navbar-dark {
