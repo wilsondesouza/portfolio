@@ -81,7 +81,7 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 	color: var(--backgroundButton-dark-hover);
 }
 #about {
-	background-color: var(--background-light);
+	background-color: var(--split-background-white);
 }
 #about, #about p {
     color: var(--text-light);
@@ -96,6 +96,7 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 .split h5, .split h6 {
 	color: var(--text-light)
 }
+
 
 /********************/
 /*     Projects     */

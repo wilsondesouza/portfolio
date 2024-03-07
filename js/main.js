@@ -64,7 +64,6 @@ const contactParagraph = document.getElementById('contact-paragraph');
 const developer = document.getElementById('developer');
 const host = document.getElementById('host');
 
-
 // Captar ID dos botões de alterar idioma
 // Capture buttons ID to change language
 const botaoMudar = document.getElementById('english');
@@ -90,7 +89,7 @@ function alterarConteudo() {
     curriculum.href = '../assets/curriculum/wilsonsouzajunior_english.pdf';
     hello.textContent = 'Hello, my name is Wilson';
     aboutParagraph.innerHTML = 'Briefly, I can say that I consider myself an organized and systematic person, ethical and professional, investigative, conventional and realistic (References to the Holland test).<br><br> Because of this, I decided to make a career transition to one that better suits my profile, and so I decided to enter the IT area when I started my studies in Computer Engineering. <br><br> Since then, I have constantly sought new knowledge about the various technologies in the area, always qualifying myself through certificates. And to put the acquired skills into practice, I seek an internship, to also learn new skills and tools with the intention of developing my career.';
-    freelance.textContent = 'Working on my own personal projects and for small merchants in the region';
+    freelance.textContent = 'Working on my own personal projects and for small entrepreneur in the region';
     education.textContent = 'Education';
     certificates.textContent = 'Certificates';
     engenharia.textContent = 'Computer Engineering';
@@ -146,8 +145,23 @@ function restaurarConteudo() {
     host.textContent = conteudoOriginal[25];
 }
 
-botaoMudar.addEventListener('click', alterarConteudo);
-botaoRestaurar.addEventListener('click', restaurarConteudo);
+// Botão Mudar
+botaoMudar.addEventListener('click', function () {
+    if (inicioNav.textContent === "Início") {
+        flag.src = "../assets/images/brasil.png";
+        alterarConteudo();
+    } 
+});
+
+// Botão Restaurar
+botaoRestaurar.addEventListener('click', function () {
+    if (inicioNav.textContent !== "Início") {
+        flag.src = "../assets/images/estados-unidos.png";
+        restaurarConteudo();
+    }
+});
+
+// Botão Idioma
 botaoIdioma.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
         flag.src = "../assets/images/brasil.png";
@@ -170,44 +184,3 @@ $(window).scroll(function () {
     }
 });
 
-// Função para pular para a próxima seção
-
-//initialize
-var winHeight = window.innerHeight,
-    pages = document.getElementsByClassName('page'),
-    navLinks = document.querySelectorAll('#menu-nav a'),
-    currentPage = 0;
-
-window.addEventListener('mousewheel', function (e) {
-    scrollPages(e.wheelDelta);
-});
-window.addEventListener('DOMMouseScroll', function (e) {
-    scrollPages(-1 * e.detail);
-});
-
-function scrollPages(delta) {
-    var direction = (delta > 0) ? 'up' : 'down',
-        currentPageOffset = currentPage * winHeight;
-
-    if (direction == 'down' && currentPage <= pages.length - 2) {
-        window.scrollTo(0, currentPageOffset + winHeight);
-        currentPage++;
-    } else if (direction == 'up' && currentPage > 0) {
-        window.scrollTo(0, currentPageOffset - winHeight);
-        currentPage--;
-    }
-}
-
-for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', updateNav(i));
-}
-
-function updateNav(i) {
-    return function () {
-        for (var j = 0; j < navLinks.length; j++) {
-            navLinks[j].parentNode.classList.remove('current');
-        }
-        navLinks[i].parentNode.classList.add('current');
-        currentPage = i;
-    }
-}

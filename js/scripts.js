@@ -1,5 +1,4 @@
-/* Description: Custom JS file */
-
+/* Description: jQuery JS file */
 
 (function ($) {
     "use strict";
@@ -29,10 +28,6 @@
     $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
         $('.offcanvas-collapse').toggleClass('open')
     })
-
-
-    /
-
 
     // hover in desktop mode
     function toggleDropdown(e) {

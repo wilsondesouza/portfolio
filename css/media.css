@@ -17,10 +17,6 @@ Table Of Contents:
 }
 /* Max-width 375px */
 @media (max-width: 375px) {
-	.download-button {
-		margin-top: -1rem;
-		color: white;
-	}
 	a#curriculum {
 		height: 58px !important;
 		width: 145px !important;
@@ -84,7 +80,6 @@ Table Of Contents:
 
 	/* Navigation */
 	.navbar {
-		padding-top: 1.75rem;
 		background-color: transparent;
 		box-shadow: none;
 		transition: all 0.2s;
@@ -153,6 +148,7 @@ Table Of Contents:
 		display: inline-block;
 	}
 	.split .area-2 {
+		margin-top: 3.5rem;
 		height: 100%;
 		width: 50%;
 		display: inline-block;

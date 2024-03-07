@@ -197,7 +197,6 @@ body.loaded .content {
 
 a#curriculum {
 	height: 58px !important;
-	width: 145px !important;
 }
 
 .header .btn-outline-lg:hover {
@@ -226,6 +225,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
     -webkit-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
+	z-index: 1;
 }
 .home-social a {
     color: white;
@@ -281,12 +281,18 @@ a.btn.btn-primary.py-3.px-4.me-5 {
     transform: scale(1);
 }
 
+
+.carousel-control-next, .carousel-control-prev {
+	z-index: 0;
+}
+
+
 /*****************/
 /*     About     */
 /*****************/
 .basic-1 {
-	padding-top: 7.75rem;
-	padding-bottom: 5.25rem;
+	padding-top: 6.75rem;
+	padding-bottom: 8.50rem;
 }
 .basic-1 .text-container {
 	margin-bottom: 3rem;
@@ -311,8 +317,8 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 	background-size: cover;
 }
 .split .area-2 {
-	padding-top: 7.75rem;
-	padding-bottom: 7.75rem;
+	padding-top: 3.75rem;
+	padding-bottom: 5.25rem;
 }
 .split p {
 	margin-bottom: 2.25rem;
@@ -331,7 +337,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 /*     Projects     */
 /********************/
 .basic-3 {
-	padding-top: 7.75rem;
+	padding-top: 3.75rem;
 	padding-bottom: 1rem;
 }
 .basic-3 .h2-heading {
@@ -339,7 +345,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 	text-align: center;
 }
 .basic-3 .p-heading {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	text-align: center;
 }
 .basic-3 .text-container {
