@@ -148,7 +148,7 @@ function restaurarConteudo() {
 // Botão Mudar
 botaoMudar.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
-        flag.src = "../assets/images/brasil.png";
+        flag.src = "./assets/images/brasil.png";
         alterarConteudo();
     } 
 });
@@ -156,7 +156,7 @@ botaoMudar.addEventListener('click', function () {
 // Botão Restaurar
 botaoRestaurar.addEventListener('click', function () {
     if (inicioNav.textContent !== "Início") {
-        flag.src = "../assets/images/estados-unidos.png";
+        flag.src = "./assets/images/estados-unidos.png";
         restaurarConteudo();
     }
 });
@@ -164,10 +164,10 @@ botaoRestaurar.addEventListener('click', function () {
 // Botão Idioma
 botaoIdioma.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
-        flag.src = "../assets/images/brasil.png";
+        flag.src = "./assets/images/brasil.png";
         alterarConteudo();
     } else {
-        flag.src = "../assets/images/estados-unidos.png";
+        flag.src = "./assets/images/estados-unidos.png";
         restaurarConteudo();
     }
 });
