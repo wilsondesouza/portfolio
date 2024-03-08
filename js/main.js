@@ -86,7 +86,7 @@ function alterarConteudo() {
     sobreNav.textContent = 'About';
     projetosNav.textContent = 'Projects';
     contatoNav.textContent = 'Contact';
-    curriculum.href = '/assets/curriculum/wilsonsouzajunior_english.pdf';
+    curriculum.href = 'assets/curriculum/wilsonsouzajunior_english.pdf';
     hello.textContent = 'Hello, my name is Wilson';
     aboutParagraph.innerHTML = 'Briefly, I can say that I consider myself an organized and systematic person, ethical and professional, investigative, conventional and realistic (References to the Holland test).<br><br> Because of this, I decided to make a career transition to one that better suits my profile, and so I decided to enter the IT area when I started my studies in Computer Engineering. <br><br> Since then, I have constantly sought new knowledge about the various technologies in the area, always qualifying myself through certificates. And to put the acquired skills into practice, I seek an internship, to also learn new skills and tools with the intention of developing my career.';
     freelance.textContent = 'Working on my own personal projects and for small entrepreneur in the region';
@@ -148,7 +148,7 @@ function restaurarConteudo() {
 // Botão Mudar
 botaoMudar.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
-        flag.src = "/assets/images/brasil.png";
+        flag.src = "assets/images/brasil.png";
         alterarConteudo();
     } 
 });
@@ -156,7 +156,7 @@ botaoMudar.addEventListener('click', function () {
 // Botão Restaurar
 botaoRestaurar.addEventListener('click', function () {
     if (inicioNav.textContent !== "Início") {
-        flag.src = "/assets/images/estados-unidos.png";
+        flag.src = "assets/images/estados-unidos.png";
         restaurarConteudo();
     }
 });
@@ -164,10 +164,10 @@ botaoRestaurar.addEventListener('click', function () {
 // Botão Idioma
 botaoIdioma.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
-        flag.src = "/assets/images/brasil.png";
+        flag.src = "assets/images/brasil.png";
         alterarConteudo();
     } else {
-        flag.src = "/assets/images/estados-unidos.png";
+        flag.src = "assets/images/estados-unidos.png";
         restaurarConteudo();
     }
 });
