@@ -57,7 +57,7 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 	transition: all 0.2s ease;
 }
 .navbar .fa-stack-1x {
-	color: var(--text-dark);
+	color: var(--text-light);
 	transition: all 0.2s ease;
 }
 .navbar .fa-stack:hover .fa-stack-1x {
@@ -110,7 +110,7 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 /*****************/
 /*     Works     */
 /*****************/
-.basic-4, .basic-3 {
+.basic-4, .basic-3 , .basic-5, #maisProjetos {
 	background-color: var(--background-light);
 }
 

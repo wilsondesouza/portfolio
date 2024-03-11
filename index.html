@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
      rel="stylesheet"> <!-- Fonts Google -->
 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
 
     <link href="css/fontawesome-all.css" rel="stylesheet"> <!-- Font Awesome -->
 
@@ -148,7 +148,7 @@
     </ul> 
 
     <!-- About-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true"  data-bs-theme="dark">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div id="about" class="section basic-1 ">
@@ -319,7 +319,7 @@
                         meus conhecimentos e habilidades, sendo estes projetos pessoais.</p>                    
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-bs-theme="grey">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                             <h3 id="python">Python</h3>
@@ -371,14 +371,16 @@
     <!-- end of projects -->
 
     <!-- Works -->
+    
     <div class="basic-4">
-        <div class="container">
+        <div class="container"> 
+            <p id="others-projects">Outros Projetos</p>
             <div class="row works">
                 <div class="col-lg-4">
                     <div class="text-container">
                         <div class="image-container">
                             <a href="https://github.com/wilsondesouza/pew-pew" target="_blank">
-                                <img class="img-fluid" src="assets/images/unity.png" alt="alternative">
+                                <img class="img-fluid" src="assets/images/unity.png" alt="Unity">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong><span id="unity-details">Jogo desenvolvido em Unity com C#. É um jogo de tiro 3D simples com um personagem que pode salta, mover, pegar itens e destruir inimigos. O jogo tem um menu simples e uma tela de "game over"</span></p>
@@ -389,7 +391,7 @@
                     <div class="text-container">
                         <div class="image-container">
                             <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
-                                <img class="img-fluid" src="assets/images/javascript.png" alt="alternative">
+                                <img class="img-fluid" src="assets/images/javascript.png" alt="JavaScript">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>Projeto:</strong>Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong><span id="javascript-details">Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário.</span></p>
@@ -399,16 +401,60 @@
                 <div class="col-lg-4">
                     <div class="text-container">
                         <div class="image-container">
-                            <a href="#">
-                                <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="alternative">
+                            <a href="https://github.com/wilsondesouza/chatgpt-clone" target="_blank">
+                                <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="React / Node">
                             </a>
                         </div> <!-- end of image-container -->
                         <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong><span id="chat-details">Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</span></p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->    
-
             </div> <!-- end of row -->        
+        </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
+
+    <div class="container basic-5">
+        <p id="others-projects">Outros Projetos</p>
+        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <a href="https://github.com/wilsondesouza/pew-pew" target="_blank">
+                        <img class="img-fluid" src="assets/images/unity.png" alt="Unity">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">  
+                    </div>
+                    <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong><span id="unity-details">Jogo desenvolvido em Unity com C#. É um jogo de tiro 3D simples com um personagem que pode salta, mover, pegar itens e destruir inimigos. O jogo tem um menu simples e uma tela de "game over"</span></p>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
+                        <img class="img-fluid" src="assets/images/javascript.png" alt="JavaScript">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">  
+                    </div>
+                    <p><strong>Projeto:</strong>Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong><span id="javascript-details">Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário.</span></p>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://github.com/wilsondesouza/chatgpt-clone" target="_blank">
+                        <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="React / Node">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">                   
+                    </div>
+                    <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong><span id="chat-details">Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</span></p>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
     <!-- end of works -->
 
     <div id="maisProjetos">
@@ -510,6 +556,6 @@
     <!-- Personal -->
     <script src="js/theme.js"></script> 
     <script src="js/scripts.js"></script> 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

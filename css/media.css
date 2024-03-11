@@ -42,6 +42,15 @@ Table Of Contents:
 	.social{
 		display: none;
 	}
+	.basic-4 {
+		display: none;
+	}
+	.offcanvas-collapse {
+		background-color: var(--background-light) !important;
+	}
+	.navbar .nav-item .nav-link {
+		color: var(--text-light) !important;
+	}
 }
 
 /*Width 768px */
@@ -136,6 +145,11 @@ Table Of Contents:
 		padding-top: 15rem;
 		padding-bottom: 14rem;
 		text-align: left;
+	}
+
+	/* Projects */
+	.basic-5 {
+		display: none;
 	}
 
 	/* Details */

@@ -380,6 +380,9 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 .basic-4 {
 	padding-bottom: 1rem;
 }
+#others-projects {
+	margin-bottom: 0rem;
+}
 .basic-4 .text-container {
 	margin-bottom: 4rem;
 }
@@ -395,7 +398,7 @@ a.btn.btn-primary.py-3.px-4.me-5 {
 #maisProjetos{
 	display: flex;
     justify-content: center;
-	margin-left: 2rem;
+	padding-left: 2rem;
 }
 
 /* Hover Animation */
