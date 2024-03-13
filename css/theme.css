@@ -5,6 +5,64 @@ Table Of Contents:
 - Themes (Light and Dark)
 ******************************************/
 
+
+/* Theme Toggle Button */
+#theme-toggle-button {
+	font-size: 17px;
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	cursor: pointer;
+	display: flex;
+}
+
+#toggle {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked+svg #container {
+	fill: #2b4360;
+}
+
+#toggle:checked+svg #button {
+	transform: translate(28px, 2.333px);
+}
+
+#toggle:checked+svg #sun,
+#moon {
+	opacity: 0;
+}
+
+#toggle:checked+svg #moon,
+#sun {
+	opacity: 1;
+}
+
+#toggle:checked+svg #cloud,
+#stars {
+	opacity: 0;
+}
+
+#toggle:checked+svg #stars,
+#cloud {
+	opacity: 1;
+}
+
 /* Temas Claro e Escuro */
 
 :root {
@@ -25,7 +83,7 @@ Table Of Contents:
 /**************************/
 /*     General Styles     */
 /**************************/
-p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outline-sm {
+p, a, a:hover, h2, h3, h4, h5, h6 {
 	color: var(--background-dark);
 }
 
@@ -36,11 +94,11 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 	background-color: var(--background-dark);
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
-.navbar .logo-text, .navbar .fa-stack:hover .fa-stack-2x {
+.navbar .logo-text {
 	color: var(--text-dark);
 }
 
-.offcanvas-collapse , .btn-outline-reg:hover, .btn-outline-lg:hover, .btn-outline-sm:hover{
+.offcanvas-collapse {
 	background-color: var(--background-dark);
 }
 
@@ -52,27 +110,9 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 .navbar .nav-item .nav-link.active {
 	color: var(--backgroundButton-dark-hover);
 }
-.navbar .fa-stack-2x {
-	color: var(--backgroundButton-dark-hover);
-	transition: all 0.2s ease;
-}
-.navbar .fa-stack-1x {
-	color: var(--text-light);
-	transition: all 0.2s ease;
-}
-.navbar .fa-stack:hover .fa-stack-1x {
-	color: var(--backgroundButton-dark-hover);
-}
 
-/*****************/
-/*  Home-Social  */
-/*****************/
-#theme-toggle {
-	color: var(--theme-toggle-white);
-}
-#botãoIdioma {
-	color: white;
-}
+
+
 
 /*****************/
 /*     About     */
@@ -104,7 +144,6 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 
 #projects h2, #projects h3{
 	color: var(--text-light);
-
 }
 
 /*****************/
@@ -114,17 +153,18 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 	background-color: var(--background-light);
 }
 
+#mais-projetos:hover .button__icon-wrapper {
+	color: #0d6efd;
+}
+
 /******************/
 /*     Footer     */
 /******************/
 .footer {
 	background-color: var(--background-dark);
 }
-.footer .fa-stack, .footer .fa-stack:hover .fa-stack-2x, .footer p {
+.footer p {
 	color: var(--colorButton-dark-hover);
-}
-.footer .fa-stack-1x {
-	color: white
 }
 
 /*********************/

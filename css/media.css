@@ -17,11 +17,6 @@ Table Of Contents:
 }
 /* Max-width 375px */
 @media (max-width: 375px) {
-	a#curriculum {
-		height: 58px !important;
-		width: 145px !important;
-		padding-top: 0.3rem !important;
-	}
 	.header {
 		height: 120%;
 	}
@@ -51,6 +46,19 @@ Table Of Contents:
 	.navbar .nav-item .nav-link {
 		color: var(--text-light) !important;
 	}
+	div#buttons{
+		margin-left: 2rem;
+	}
+	button.git-hub {
+		margin-bottom: 1rem;
+	}
+	.git-hub {
+		background-color: var(--background-dark);
+	}
+	.svgIcon path {
+		fill: var(--background-light);
+	}
+	
 }
 
 /*Width 768px */
@@ -69,6 +77,11 @@ Table Of Contents:
 	}
 	.header h1.display-3 {
 		width: max-content;
+	}
+	div#buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
 	}
 }
 
@@ -133,11 +146,8 @@ Table Of Contents:
 		width: 90%;
 	}
 	.navbar .social-icons {
-		margin-left: 0.5rem;
-	}
-	.navbar .fa-stack {
-		margin-right: 0;
-		margin-left: 0.25rem;
+		display: flex;
+		margin-left: 2rem;
 	}
 
 	/* Header */
@@ -145,6 +155,10 @@ Table Of Contents:
 		padding-top: 15rem;
 		padding-bottom: 14rem;
 		text-align: left;
+	}
+
+	#typing-text {
+		width: max-content;
 	}
 
 	/* Projects */

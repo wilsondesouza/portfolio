@@ -1,6 +1,6 @@
 // Alterar o tema entre claro e escuro
 // Switch between light mode and dark mode
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById('toggle');
 const moonIcon = document.querySelector('.fa-solid.fa-moon');
 
 themeToggle.addEventListener('click', () => {

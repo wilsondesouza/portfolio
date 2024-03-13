@@ -30,7 +30,7 @@ function typeText(texto) {
         setTimeout(addText, 3000);
     }
 }
-typeText("Desenvolvedor   /   Engenheiro da Computação.");
+typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
 
 // Alterar idioma entre Português e Inglês
 // Change language between Portuguese and English
@@ -81,7 +81,7 @@ const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosN
 function alterarConteudo() {
     const typingTextElement = document.getElementById("typing-text");
     typingTextElement.textContent = "";
-    typeText("Developer   /   Computer Engineer.");
+    typeText("Mobile & Front-End Developer   |   Computer Engineer.");
 
     inicioNav.textContent = 'Home';
     sobreNav.textContent = 'About';
