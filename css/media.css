@@ -29,13 +29,28 @@ Table Of Contents:
 	}
 }
 
+/* Max-width 425px */
+@media (max-width: 425px) {
+	.navbar .social-icons {
+		padding-top: 2rem !important;
+		margin-left: 0rem !important;
+	}
+	.navbar .social-icons a {
+    margin-left: .8rem !important;
+	}
+}
+
+/*Width 425px */
+@media (width: 425px){
+.navbar .social-icons {
+    justify-content: center !important;
+	}
+}
+
 /* Max-width 768px */
 @media (max-width: 768px) {
 	nav.navbar.navbar-expand-lg.fixed-top.navbar-dark {
 		background-color: #24262a !important;
-	}
-	.social{
-		display: none;
 	}
 	.basic-4 {
 		display: none;
@@ -49,14 +64,32 @@ Table Of Contents:
 	div#buttons{
 		margin-left: 2rem;
 	}
-	button.git-hub {
-		margin-bottom: 1rem;
+
+	.navbar .social-icons {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.navbar .social-icons a {
+		margin-left: 1rem;
+	}
+	.linked-in{
+		margin-left: 2.5rem
 	}
 	.git-hub {
 		background-color: var(--background-dark);
 	}
+	.text {
+		color: var(--text-dark);
+	}
 	.svgIcon path {
 		fill: var(--background-light);
+	}
+	.example-2{
+		display: none;
+	}
+	.linked-in,.git-hub, .translate, .translate2, .insta-gram, .you-tube{
+		display: flex;
+		margin-bottom: .5rem;
 	}
 	
 }
@@ -65,6 +98,14 @@ Table Of Contents:
 @media (width: 768px){
 	h1.display-3 {
 		display: inline;
+	}
+	.navbar .social-icons {
+		display: flex;
+		justify-content: center;
+		padding-top: 4rem;
+	}
+	.navbar .social-icons a {
+		margin-left: 1rem;
 	}
 }
 
@@ -83,6 +124,7 @@ Table Of Contents:
 		flex-direction: row;
 		align-items: flex-start;
 	}
+	
 }
 
 /* Min-width 992px */
@@ -145,9 +187,9 @@ Table Of Contents:
 	.navbar .dropdown-divider {
 		width: 90%;
 	}
-	.navbar .social-icons {
-		display: flex;
-		margin-left: 2rem;
+	
+	#menu-lateral{
+		display: none;
 	}
 
 	/* Header */
@@ -188,6 +230,19 @@ Table Of Contents:
 	}
 }
 
+/* Max-width 1024px */
+@media (max-width: 1024px) {
+	.example-2 .icon-content a{
+		width: 2.55rem;
+		height: 2.55rem;
+	}
+	.example-2 .icon-content .tooltip{
+		padding:.25rem .5rem;
+		transform: translateY(220%);
+
+	}
+	
+}
 
 /* Min-width 1200px */
 @media (min-width: 1200px) {
@@ -229,3 +284,8 @@ Table Of Contents:
 		width: 460px;
 		margin-left: 25rem;
 	}}
+
+/* Min-width 1800px */
+@media (min-width: 1800px) {
+
+}
