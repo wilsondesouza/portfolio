@@ -68,7 +68,7 @@ const host = document.getElementById('host');
 
 // Guardar texto original (Em português)
 // Save original text (In Portuguese)
-const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent,];
+const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
 
 // Alterar conteúdo dos textos parar inglês
 // Change texts content to English
@@ -111,7 +111,7 @@ function alterarConteudo() {
 function restaurarConteudo() {
     const typingTextElement = document.getElementById("typing-text");
     typingTextElement.textContent = "";
-    typeText("Desenvolvedor   /   Engenheiro da Computação.");
+    typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
 
     inicioNav.textContent = "Início";
     sobreNav.textContent = conteudoOriginal[1];
@@ -162,6 +162,7 @@ botaoMudar.addEventListener('click', function () {
         botaoIdioma.setAttribute('data-social', 'translate2');
         path2.setAttribute('fill', 'url(#gradiente-4)');
         botãoTranslate.setAttribute('class', 'translate2');
+        
         alterarConteudo();
     }
 });
@@ -173,6 +174,7 @@ botaoRestaurar.addEventListener('click', function () {
         botaoIdioma.setAttribute('data-social', 'translate');
         path2.setAttribute('fill', 'url(#gradiente-3)');
         botãoTranslate.setAttribute('class', 'translate');
+        
         restaurarConteudo();
     }
 });
@@ -184,6 +186,7 @@ function alternarIdioma() {
         path2.setAttribute('fill', 'url(#gradiente-4)');
         atualizarBotaoIdioma('translate2');
         atualizarBotaoTranslate('translate2');
+        
         alterarConteudo();
     } else {
         path.setAttribute('fill', 'url(#gradiente-1)');

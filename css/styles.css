@@ -314,8 +314,8 @@ p#mais-projetos {
 	width: 25px;
 	height: 25px;
 	position: relative;
-	color: var(--text-light);
-	background-color: var(--background-light);
+	color: var(--text-dark);
+	background-color: var(--background-dark);
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
