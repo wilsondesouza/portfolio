@@ -281,7 +281,7 @@ body.loaded .content {
 	/* Efeito da digitação */
 	display: inline-block;
 	color: white;
-	background: linear-gradient(to right, rgba(111, 191, 103, 1) 10%, rgba(171, 199, 52, 1) 50%, rgba(231, 210, 13, 1) 74%, rgba(255, 214, 0, 1) 90%);
+	background: linear-gradient(to right, rgba(111, 191, 103, 1) 20%, rgb(32, 4, 158) 50%, rgba(231, 210, 13, 1) 80%, rgba(255, 214, 0, 1) 90%);
 	/*background: linear-gradient(to right, rgba(0,168,253),#fff 35%, #e00a95);*/
 	background-size: 200% auto;
 	-webkit-background-clip: text;
@@ -442,7 +442,6 @@ div#download {
 	-moz-transition: box-shadow 0.2s ease-in;
 	transition: box-shadow 0.2s ease-in;
 }
-
 
 .dropdown-menu.show {
 	display: block;
