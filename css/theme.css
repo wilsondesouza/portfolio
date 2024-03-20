@@ -78,6 +78,8 @@ Table Of Contents:
 	--split-background-dark: #2e3033;
 	--theme-toggle-white: white;
 	--theme-toggle-dark: gold;
+	--navBarColor-dark: rgba(36, 38, 42, 0.9);
+	--navBarColor-light: rgba(255, 255, 255, 0.9);
 }
 
 /**************************/
@@ -91,16 +93,20 @@ p, a, a:hover, h2, h3, h4, h5, h6 {
 /*     Navigation     */
 /**********************/
 .navbar, nav.navbar.navbar-expand-lg.fixed-top.navbar-dark  {
-	background-color: var(--background-dark);
-	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
+	background-color: var(--navBarColor-dark);
+	box-shadow: 0 1px 6px 0 #0d6efd, 1px 1px 10px #0d6efd inset;
+	backdrop-filter: blur(2px);
+	
 }
+
+div#navbarsExampleDefault {
+	background-color: transparent;
+}
+
 .navbar .logo-text {
 	color: var(--text-dark);
 }
 
-.offcanvas-collapse {
-	background-color: var(--background-dark);
-}
 
 .navbar .nav-item .nav-link {
 	color: var(--text-dark);

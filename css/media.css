@@ -52,7 +52,11 @@ Table Of Contents:
 /* Max-width 768px */
 @media (max-width: 768px) {
 	nav.navbar.navbar-expand-lg.fixed-top.navbar-dark {
-		background-color: #24262a !important;
+		background-color: rgba(36, 38, 42, 0.9) !important;
+	}
+
+	div#navbarsExampleDefault {
+		background-color: var(--background-light) !important;
 	}
 
 	.basic-4 {

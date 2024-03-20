@@ -265,8 +265,11 @@ body.loaded .content {
 	text-align: center;
 }
 
-.header h1 {
-	color: white;
+.header h1.display-3 {
+	color: #ffffff;
+	/*background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;*/
 }
 
 .header .h1-large {
