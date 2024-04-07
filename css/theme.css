@@ -5,7 +5,6 @@ Table Of Contents:
 - Themes (Light and Dark)
 ******************************************/
 
-
 /* Theme Toggle Button */
 #theme-toggle-button {
 	font-size: 17px;
@@ -105,7 +104,6 @@ div#navbarsExampleDefault {
 	color: var(--text-dark);
 }
 
-
 .navbar .nav-item .nav-link {
 	color: var(--text-dark);
 }
@@ -137,7 +135,6 @@ div#navbarsExampleDefault {
 .split h5, .split h6 {
 	color: var(--text-light)
 }
-
 
 /********************/
 /*     Projects     */
