@@ -36,24 +36,10 @@ h1 {
 	font-family: var(--font-family);
 }
 
-h2 {
-	font-weight: var(--heading-font-weight);
-	font-size: 2rem;
-	line-height: 2.5rem;
-	font-family: var(--font-family);
-}
-
 h3 {
 	font-weight: var(--heading-font-weight);
 	font-size: 1.75rem;
 	line-height: 2.25rem;
-	font-family: var(--font-family);
-}
-
-h4 {
-	font-weight: var(--heading-font-weight);
-	font-size: 1.5rem;
-	line-height: 2rem;
 	font-family: var(--font-family);
 }
 
@@ -71,18 +57,9 @@ h6 {
 	font-family: var(--font-family);
 }
 
-.p-large {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-
 .p-small {
 	font-size: 0.875rem;
 	line-height: 1.5rem;
-}
-
-.li-space-lg li {
-	margin-bottom: 0.5rem;
 }
 
 a {
@@ -91,22 +68,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-.no-line {
-	text-decoration: none;
-}
-
-.no-line:hover {
-	text-decoration: none;
-}
-
-.blue {
-	color: #2259ec;
-}
-
-.bg-gray {
-	background-color: #f7f9fb;
 }
 
 .section-divider {
@@ -124,48 +85,4 @@ a:hover {
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
-}
-
-.btn-solid-reg {
-	padding: 1.375rem 2.25rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
-	color: #ffffff;
-}
-
-.btn-solid-lg {
-	padding: 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
-	color: #ffffff;
-}
-
-.btn-outline-reg {
-	padding: 1.375rem 2.25rem;
-	border: 1px solid #24262a;
-	background-color: transparent;
-}
-
-.btn-outline-lg {
-	padding: 1.625rem 2.625rem;
-	border: 1px solid #24262a;
-	background-color: transparent;
-}
-
-.btn-outline-sm {
-	padding: 1rem 1.5rem;
-	border: 1px solid #24262a;
-	background-color: transparent;
-}
-
-.label-control {
-	position: absolute;
-	top: 0.875rem;
-	left: 1.5rem;
-	color: #7d838a;
-	opacity: 1;
-	font-size: 0.875rem;
-	line-height: 1.375rem;
-	cursor: text;
-	transition: all 0.2s ease;
 }

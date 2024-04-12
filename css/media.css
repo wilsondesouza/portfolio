@@ -52,6 +52,18 @@ Table Of Contents:
 	.basic-4 {
 		display: none;
 	}
+
+	#react-image {
+		content: url(../assets/images/rm6.png);
+	}
+
+	#python-image {
+		content: url(../assets/images/p1.gif);
+	}
+
+	#flutter-image {
+		content: url(../assets/images/fm1.png);
+	}
 }
 
 /*Width 425px */
@@ -123,22 +135,7 @@ Table Of Contents:
 		margin-bottom: .5rem;
 	}
 
-	#react-image {
-		content: url(../assets/images/rm6.png);
-	}
 
-	#python-image {
-		content: url(../assets/images/p1.gif);
-	}
-
-	#flutter-image {
-		content: url(../assets/images/fm1.png);
-
-	}
-
-	.splide__pagination{
-		bottom: 25px !important;
-	}
 
 }
 
@@ -158,11 +155,7 @@ Table Of Contents:
 		margin-left: 1rem;
 	}
 
-	.splide__pagination{
-		bottom: 50px !important ;
-	}
 
-	
 }
 
 /* Min-width 768px */
@@ -221,13 +214,6 @@ Table Of Contents:
 		transition: all 0.2s;
 	}
 
-	.navbar.top-nav-collapse {
-		padding-top: 0.5rem;
-		padding-top: 0.5rem;
-		background-color: #24262a;
-		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
-	}
-
 	.offcanvas-collapse {
 		position: static;
 		top: auto;
@@ -241,11 +227,6 @@ Table Of Contents:
 		visibility: visible;
 	}
 
-	.offcanvas-collapse.open {
-		-webkit-transform: none;
-		transform: none;
-	}
-
 	.navbar .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -254,15 +235,6 @@ Table Of Contents:
 	.navbar .nav-item .nav-link {
 		padding-right: 0.625rem;
 		padding-left: 0.625rem;
-	}
-
-	.navbar .dropdown-menu {
-		margin-top: 0.25rem;
-		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);
-	}
-
-	.navbar .dropdown-divider {
-		width: 90%;
 	}
 
 	#menu-lateral {
@@ -443,12 +415,6 @@ Table Of Contents:
 		height: 760px;
 	}
 
-	.split .area-1 {
-		height: 100%;
-		width: 50%;
-		display: inline-block;
-	}
-
 	.split .area-2 {
 		margin-top: 3.5rem;
 		height: 100%;
@@ -482,10 +448,6 @@ Table Of Contents:
 @media (min-width: 1440px) {
 
 	/* General Styles */
-	.h1-large {
-		font-size: 3.75rem;
-		line-height: 4.625rem;
-	}
 
 	/* Navigation */
 	.navbar .container {
@@ -515,7 +477,7 @@ Table Of Contents:
 	/* About */
 
 	.container {
-		max-width: 1140px;
+		max-width: 1150px;
 	}
 
 	.basic-1 .text-container.first {
@@ -537,4 +499,3 @@ Table Of Contents:
 }
 
 /* Min-width 1800px */
-@media (min-width: 1800px) {}

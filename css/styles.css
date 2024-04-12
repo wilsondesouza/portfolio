@@ -167,6 +167,15 @@ ul {
 	margin: 0 0 0.125rem 0;
 }
 
+.col-lg-6.wow.fadeInUp {
+    display: grid;
+    justify-items: center;
+}
+
+.area-2 ul {
+	width: 350px;
+}
+
 /*******************/
 /*     Details     */
 /*******************/
