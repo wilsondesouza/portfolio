@@ -9,6 +9,14 @@ Table Of Contents:
 /*     Media Queries     */
 /*************************/
 
+/* Min-width 320px */
+@media (min-width: 320px) {
+	.split .text-container {
+		display: grid;
+		justify-content: center;
+	}
+}
+
 /* Max-width 363px */
 @media (max-width: 363px) {
 	body {
@@ -40,6 +48,10 @@ Table Of Contents:
 	.navbar .social-icons a {
 		margin-left: .8rem !important;
 	}
+
+	.basic-4 {
+		display: none;
+	}
 }
 
 /*Width 425px */
@@ -57,10 +69,6 @@ Table Of Contents:
 
 	div#navbarsExampleDefault {
 		background-color: var(--background-light) !important;
-	}
-
-	.basic-4 {
-		display: none;
 	}
 
 	.offcanvas-collapse {
@@ -115,6 +123,23 @@ Table Of Contents:
 		margin-bottom: .5rem;
 	}
 
+	#react-image {
+		content: url(../assets/images/rm6.png);
+	}
+
+	#python-image {
+		content: url(../assets/images/p1.gif);
+	}
+
+	#flutter-image {
+		content: url(../assets/images/fm1.png);
+
+	}
+
+	.splide__pagination{
+		bottom: 25px !important;
+	}
+
 }
 
 /*Width 768px */
@@ -132,6 +157,12 @@ Table Of Contents:
 	.navbar .social-icons a {
 		margin-left: 1rem;
 	}
+
+	.splide__pagination{
+		bottom: 50px !important ;
+	}
+
+	
 }
 
 /* Min-width 768px */
@@ -154,6 +185,10 @@ Table Of Contents:
 		padding-top: 5rem;
 	}
 
+	.basic-5 {
+		display: none;
+	}
+
 }
 
 /* Max-width 991px */
@@ -174,7 +209,7 @@ Table Of Contents:
 	}
 
 	.p-heading {
-		width: 46rem;
+		width: 70%;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -398,11 +433,9 @@ Table Of Contents:
 		transform: translateY(30px);
 	}
 
-
-
-	/* Projects */
-	.basic-5 {
-		display: none;
+	/* About */
+	.split .text-container {
+		justify-content: end;
 	}
 
 	/* Details */
@@ -445,8 +478,8 @@ Table Of Contents:
 
 }
 
-/* Min-width 1200px */
-@media (min-width: 1200px) {
+/* Min-width 1440px */
+@media (min-width: 1440px) {
 
 	/* General Styles */
 	.h1-large {
@@ -461,27 +494,36 @@ Table Of Contents:
 
 	/* Header */
 	.header {
-		padding-top: 7rem;
-		padding-bottom: 17.25rem;
+		padding: 12rem;
 		height: inherit;
 	}
 
-	div#buttons{
+	div#buttons {
 		padding-top: 10rem;
 	}
 
+	.mobile-box {
+		top: 55%;
+		left: 75%;
+	}
+
+	.mobile {
+		width: 250px;
+		height: 531px;
+	}
+
 	/* About */
+
+	.container {
+		max-width: 1140px;
+	}
+
 	.basic-1 .text-container.first {
-		margin-right: 2rem;
+		margin: 0 2rem 0 0;
 	}
 
 	.basic-1 .text-container.second {
-		margin-right: 1rem;
-		margin-left: 1rem;
-	}
-
-	.basic-1 .text-container.third {
-		margin-left: 2rem;
+		margin: 0 1rem 0 1rem;
 	}
 
 	/* Details */
@@ -490,8 +532,7 @@ Table Of Contents:
 	}
 
 	.split .text-container {
-		width: 460px;
-		margin-left: 25rem;
+		width: 500px;
 	}
 }
 

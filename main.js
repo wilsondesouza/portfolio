@@ -99,7 +99,7 @@ function alterarConteudo() {
     othersProjects.textContent = 'Others Projects';
     unityDetails.textContent = "Game developed in Unity with C#. It's a simple 3D shooter game with a character who can jump, move, pick up items, and destroy enemies. The game has a simple menu and a 'game over' screen";
     javascriptDetails.textContent = 'Webgame with simple HTML construction, some CSS stylings and JavaScript programming to interact with the user.';
-    chatDetails.textContent = 'Application using React to consume the Open Ai API to simulate a generative AI of texts.';
+    chatDetails.textContent = 'Fullstack project containing a database to feed a Generative AI API, and thus generate a small personalized chat with the end user.';
     maisProjetos.textContent = 'More Projects';
     contactParagraph.textContent = 'I am available for contact, whether for professional opportunities or for a study and improvement team.';
     developer.textContent = '2023-2024 • Developed by @wilsondesouza';
