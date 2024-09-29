@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/jpg" href="assets/imgs/OIG.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Website personal portfolio">
+    <meta name="author" content="Wilson Souza">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="wilsondesouza" /> <!-- website name -->
+	<meta property="og:site" content="https://portfolio-cyan-sigma-21.vercel.app/" /> <!-- website link -->
+	<meta property="og:title" content="Wilson Souza • Computer Engineer"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Professional portfolio website" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
     <title>Wilson Souza • Computer Engineer</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+     rel="stylesheet"> <!-- Fonts Google -->
+
+     <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
+
+    <link href="css/fontawesome-all.css" rel="stylesheet"> <!-- Font Awesome -->
+
+    <!-- Personal -->
+	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/general-styles.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="assets/images/OIG.png">
+
+    <!-- Chat Bot  -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b2014496-a95e-4c6f-9919-2cb4e21b75c6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    
 </head>
+<body data-spy="scroll" data-target=".fixed-top">  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body class="body">
-    <div class="grid-container">
-        <aside class="sidebar scroll">
-            <nav>
-                <ul id="minha-lista">
-                    <li> <a title="Início" href="#" type="button" class="home btn" style="display:none;">
-                            <i class="fa-sharp fa-solid fa-house"></i>
-                            <p></p>
-                        </a></li>
-                    <li> <a title="Sobre Mim" href="#intro" type="button" class="about-me btn">
-                            <i class="fa-sharp fa-solid fa-address-card"></i>
-                            <p></p>
-                        </a></li>
-                    <li> <a title="Projetos" href="#projects" type="button" class="my-projects btn">
-                            <i class="fa-sharp fa-solid fa-laptop-code "></i>
-                            <p></p>
-                        </a></li>
-                    <li> <a title="Contato" href="#links" type="button" class="contact-me btn">
-                            <i class="fa-sharp fa-solid fa-envelope"></i>
-                            <p></p>
-                        </a></li>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header" id="inicio-nav">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about" id="sobre-nav">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projects" id="projetos-nav">Projetos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href=".footer" id="contato-nav">Contato</a>
+                    </li>
                 </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a title= "GitHub" href="https://github.com/wilsondesouza" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/wilson-souza-junior-28702619b/" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-            </nav>
-        </aside>
-
-        <header class="header scroll">
-            <div class="header-info">
-                <h1>Wilson de Souza Júnior</h1>
-                <p id="subtitle">• Rio de Janeiro/Brasil <br> • Engenheiro da Computação</p>
-            </div>
-            <div class="btn-group">
-                <button type="button" id='btn' class="btn dropdown-toggle" data-bs-toggle="dropdown"
+    <!-- Header -->   
+    <header id="header" class="header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3" id="name">I'm</h3>
+                    <h1 class="display-3">Wilson de Souza Júnior</h1>
+                    <div class="typing-container">
+                        <div id="typing-text"></div>
+                        <span class="cursor" id="cursor">|</span>
+                      </div>
+                    <div class="d-flex align-items-center pt-5">
+                        <a id="curriculum" href="assets/curriculum/wilsonsouzajunior_portugues.pdf" target="_blank" class="btn btn-primary py-3 px-4 me-5"><span class="download-button">Download CV</span></a>
+                        <div class="btn-group">
+                <button type="button" id='btn' class="btn dropdown-toggle btn-primary py-3 px-4 me-5" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Language
                 </button>
@@ -57,179 +111,451 @@
                     <li><button type='button' class="dropdown-item" id='portuguese'>Portuguese</button></li>
                 </ul>
             </div>
-            <a id="curriculum" href="assets/curriculum/wilsonsouzajunior_portugues.pdf" target="_blank">Curriculum</a>
-            <br>
-            <button title="Alternar Tema" type='button' id='theme-toggle'
-                class="btncont contraste styled__MenuBarItem-sc-1ita5x0-6 iMePCS dark">
-                <svg title="Alternar Tema" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 hPhvO">
-                    <path title="Alternar Tema" fill-rule="evenodd"
-                        d="M7.186 19.172c.789.51 1.701.855 2.814.828 1.111.027 2.025-.318 2.814-.828L12.797 17H7.203l-.017 2.172zM12.697 16c0-4.357 4.63-5.848 4.283-10.188-.218-2.738-2.073-5.81-6.98-5.81S3.238 3.074 3.019 5.813C2.672 10.152 7.303 11.643 7.303 16h5.394zM5 6c.207-2.598 2.113-4 5-4 2.886 0 4.654 1.371 4.861 3.969.113 1.424-.705 2.373-1.809 3.926C12.238 11.041 11.449 12.238 11 14H9c-.449-1.762-1.238-2.959-2.053-4.106C5.844 8.342 4.886 7.424 5 6z"
-                        clip-rule="evenodd"></path>
-                </svg></button>
-            <br><br> <br><br> <br><br> <br><br>
-
-            <!-- <img class='construction' alt="Página em Construção" height="200" width="200"
-              src='assets/imgs/underConstruction.png' /> -->
-        </header>
-
-        <div class="main-content">
-
-            <main class="main-content" id="maincontent">
-
-                <section id="intro">
-                    <h2 id="hello">Olá, meu nome é Wilson.</h2>
-                    <div>
-                        <p id="about">De forma sucinta, posso dizer que me considero uma pessoa organizada e
-                            sistemática, ética e profissional, investigativa, convencional e realístico (Referências ao
-                            teste de Holland).
-                            <br> <br>
-                            Por conta disso decidi realizar uma transição de carreira para uma que se adeque mais ao meu
-                            perfil, e assim decidi entrar na área de T.I quando iniciei meus estudos em Engenharia de
-                            Computação.
-                            <br> <br>
-                            Desde então, constantemente busco novos conhecimentos sobre as diversas
-                            tecnologias da área, sempre me qualificando através de certificados. E para por em prática
-                            as habilidades adquiridas busco um estágio, para também aprender novas habilidades e
-                            ferramentas na intenção de desenvolver minha carreira.
-                        </p>
                     </div>
-                    <div class="skills">
-                        <h4 id="skills">Habilidades/Ferramentas</h4>
-                        <img alt="Python" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                            id="imagem">
-
-                        <img alt="Flutter" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg">
-
-                        <img alt="JavaScript" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-
-                        <img alt="HTML" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                            id="imagem">
-
-                        <img alt="CSS" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                            id="imagem">
-
-                        <img alt="GitHub" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
-
-                        <img alt="Git" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
-
-                        <img alt="Bootstrap" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
-
-                        <img alt="React" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-
-                        <img alt="Java" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-
-                        <img alt="AWS" height="30" width="40"
-                            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg">
-
-                        <img alt="Angular" height="30" width="40"
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
-                    </div>
-                    <hr>
-                    </hr>
-                </section>
-
-                <section>
-                    <h2 id="projects">Projetos</h2>
-                    <div class="project-buttons">
-                        <p id="projectsParagraph">A seguir deixarei alguns projetos que já desenvolvi. Desde projetos
-                            simples, práticos, funcionais até os mais complexos.
-                            <br> <br>
-                            Alguns projetos foram construídos para
-                            servir de avaliação para alguns cursos, e outros foram feitos para assimilar e solidificar
-                            meus conhecimentos e habilidades, sendo estes projetos pessoais.
-                        </p>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Python</h4>
-                                <p class="card-text" id="python">Python foi a primeira linguagem que comecei a aprender,
-                                    então decidi criar este
-                                    repositório
-                                    pessoal onde eu fui construindo, evoluindo e refinando o meu primeiro código
-                                    pessoal,
-                                    possibilitando assim conferir a minha própria evolução na linguagem Python.</p>
-                                <img src="assets/imgs/python/p1.png" class="card-img-top"
-                                    alt="Programa escrito em Python" />
-                                <a href="pages/projects.html#python" class="btn btn-primary">Ver mais</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">React</h4>
-                                <p class="card-text" id="react">Evolução de um projeto de HTML, CSS e Bootstrap,
-                                    aplicando algumas lógicas em
-                                    JavaScript e
-                                    funcionalidade com React. <br> Feito para concluir um desafio do curso
-                                    Descomplica/Instituto Nu.</p>
-                                <img id="react-image" src="assets/imgs/react/r6.png" class="card-img-top"
-                                    alt="Programa escrito em JavaScript" />
-                                <a href="pages/projects.html#react" class="btn btn-primary">Ver mais</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Flutter</h4>
-                                <p class="card-text" id="flutter">Aplicativo feito em Flutter para Android. Construído
-                                    inicialmente para sanar necessidade de um comerciante local, e posteriormente
-                                    adaptado para uso pessoal</p>
-                                <img id="flutter-image" src="assets/imgs/flutter/f1.png" class="card-img-top"
-                                    alt="Programa escrito em Dart" />
-                                <a href="pages/projects.html#flutter" class="btn btn-primary">Ver mais</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="maisProjetos2">
-                        <a class="maisProjetos" href="https://github.com/wilsondesouza?tab=repositories"
-                            target="_blank>">Outros Projetos</a>
-                    </div>
-                    <hr>
-                    </hr>
-                </section>
-
-                <section id="links">
-                    <h2 id="contact">Contato</h2>
-                    <div>
-                        <p id="contactParagraph">Estou disponível para contato, seja para oportunidades profissionais ou
-                            para uma
-                            equipe de estudo e aperfeiçoamento</p>
-                    </div>
-                    <div class="link-buttons ">
-                        <a title="GitHub" href="https://github.com/wilsondesouza" target="_blank"><i
-                                class="fa-brands fa-github fa-lg"></i></a>
-                        <a title="LinkedIn" href="https://www.linkedin.com/in/wilson-souza-junior-28702619b/"
-                            target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-                        <a title="Email" href="mailto:wilson.de.souza.junior@gmail.com" target="_blank"><i
-                                class="fa-regular fa-envelope fa-lg"></i></a>
-                    </div>
-                    <hr>
-                    </hr>
-                </section>
-            </main>
-            <footer>
-                <div id="footer">
-                    <p>2023 - Desenvolvido por @wilsondesouza. Hospedado em Git Hub Pages</p>
                 </div>
-            </footer>
+            </div> <!-- end of row -->           
+            <!-- end home-social -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Home Social-->        
+    <ul class="home-social">
+        <li>
+            <a id="theme-toggle" type="button"><i class="fa-solid fa-moon" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a id="botãoIdioma" type="button"><i aria-hidden="true"><img id="flag" style="margin-top: -0.1rem; margin-right: 0.01rem;" src="assets/images/estados-unidos.png"></i></a>
+        </li>
+        <br><br>
+        <div class="social">
+            <li>
+                <a href="https://www.linkedin.com/in/wilson-souza-junior-28702619b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/wilsondesouza" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/juni0r.s0uza/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@juninholett/videos" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
+            </li>
+            <li>
+                <a href="mailto:wilson.de.souza.junior@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+            </li>
         </div>
+    </ul> 
+
+    <!-- About-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="about" class="section basic-1 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="row-lg-4">
+                            <div class="text-container first">
+                                <h3 id="hello">Olá, meu nome é Wilson.</h3>
+                                <p id="about-paragraph">De forma sucinta, posso dizer que me considero uma pessoa organizada e
+                                    sistemática, ética e profissional, investigativa, convencional e realístico (Referências ao
+                                    teste de Holland).
+                                    <br> <br>
+                                    Por conta disso decidi realizar uma transição de carreira para uma que se adeque mais ao meu
+                                    perfil, e assim decidi entrar na área de T.I quando iniciei meus estudos em Engenharia de
+                                    Computação.
+                                    <br> <br>
+                                    Desde então, constantemente busco novos conhecimentos sobre as diversas
+                                    tecnologias da área, sempre me qualificando através de certificados. E para por em prática
+                                    as habilidades adquiridas busco um estágio, para também aprender novas habilidades e
+                                    ferramentas na intenção de desenvolver minha carreira.</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-4">
+                            <div class="text-container second">
+                                <div class="time">2023 - Presente</div>
+                                <h6>Freelance Developer</h6>
+                                <p id="freelance">Trabalhando em meus próprios projetos pessoais e para pequenos comerciantes da região</p>              
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-4">                   
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+          </div>
+            <!-- end of about -->
+
+    <!-- Details -->
+    <div class="carousel-item">
+	<div class="split">
+		<div class="area-2">                
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">                         
+                        <!-- Text Container -->
+                        <div class="text-container">
+
+                            <h5>SOFT SKILLS</h5>
+                                <div class="icons-container">
+                                    <img title="Scrum" src="assets/images/agil.png" alt="Scrum">
+                                    <img title="Design Thinking" src="assets/images/design-thinking.png" alt="Design Thinking">
+                                    <img title="Kanban" src="assets/images/kanban.png" alt="Kanban">
+                                </div> <!-- end of icons-container -->
+  
+                            <h5>DESIGN TOOLS</h5>
+                                <div class="icons-container">
+                                    <img title="Canva" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/canva/canva-original.svg" alt="Canva">
+                                    <img title="Figma" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="Figma">
+                                </div> <!-- end of icons-container -->
+
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <div class="icons-container">
+                                <img title="Python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
+                                <img title="Flutter" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="Flutter">
+                                <img title="JavaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img title="React" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React">
+                            </div> <!-- end of icons-container -->
+                        </div> <!-- end of text-container -->
+                        <!-- end of text container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                                <li class="nav-item w-50">
+                                    <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1" id="education">Educação</button>
+                                </li>
+                                <li class="nav-item w-50">
+                                    <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2" id="certificates">Certificados</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row gy-5 gx-4">
+                                        <div class="col-sm-12">
+                                            <h5 style="width: max-content;" id="engenharia">Engenharia da Computação</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2023 - 2025</p>
+                                            <h6 class="mb-0">Descomplica</h6>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <h5 id="logistica">Logística</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2016 - 2020</p>
+                                            <h6 class="mb-0">Estácio de Sá</h6>
+                                        </div>                                     
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane fade show p-0">
+                                    <div class="row gy-5 gx-4">
+
+                                        <div class="col-sm-6">
+                                            <h5>FrontEnd Development</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2023</p>
+                                            <h6 class="mb-0">Instituto Nu</h6>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <h5 id="dev-java">Desenvolvimento Java com Cloud</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2023</p>
+                                            <h6 class="mb-0">dio</h6>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <h5>Python Essentials I</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2023</p>
+                                            <h6 class="mb-0">Cisco</h6>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <h5 id=dev-flutter>Desenvolvimento Mobile com Flutter</h5>
+                                            <hr class="text-primary my-2">
+                                            <p class="text-primary mb-1">2023</p>
+                                            <h6 class="mb-0">Santander</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of split -->
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <!-- end of details -->
+
+    <!-- Projects -->
+    <div id="projects" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="h2-heading" id="projects-title">Projetos</h3>    
+                    <p class="p-heading" id="projects-paragraph">A seguir deixarei alguns projetos que já desenvolvi. Desde projetos
+                        simples, práticos, funcionais até os mais complexos.
+                        <br>
+                        Alguns projetos foram construídos para
+                        servir de avaliação para alguns cursos, e outros foram feitos para assimilar e solidificar
+                        meus conhecimentos e habilidades, sendo estes projetos pessoais.</p>                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <h3 id="python">Python</h3>
+                        <a href="https://github.com/wilsondesouza/Descubra-seu-dano" target="_blank"><img src="assets/images/p1.png"
+                                class="d-block w-100" alt="Python"></a>
+                        <div class="carousel-caption d-none d-md-block">  
+                        </div>
+                        <p><strong>Projeto:</strong> Descubra seu dano,<strong>Detalhes:</strong><span
+                            id="python-details">Aplicativo desktop programado em Python utilizando a biblioteca Custom
+                            Tkinter para a criação da interface gráfica. Foram utilizados dicionários para buscar e retornar
+                            valores e listas para a geração dos botões.</span></p>
+    
+                    </div>
+                    <div class="carousel-item">
+                        <h3 id="react">React</h3>
+                        <a href="https://github.com/wilsondesouza/projeto_js_e_react" target="_blank"><img
+                                src="assets/images/r6.png" class="d-block w-100" alt="React"></a>
+                        <div class="carousel-caption d-none d-md-block">  
+                        </div>
+                        <p><strong>Projeto:</strong> Universo do Saber,<strong>Detalhes:</strong><span id="react-details">Site
+                            construído para completar o curso Instituto Nu. Utilizado biblioteca React para deixar o site
+                            reativo e interativo. JavaScript vanilla também foi utilizado para aplicar algumas lógicas no
+                            Carrinho de Compras e na alteração de Temas.</span></p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 id="flutter">Flutter</h3>
+                        <a href="https://github.com/wilsondesouza/guarda_dados" target="_blank"><img src="assets/images/f1.png"
+                                class="d-block w-100" alt="Flutter"></a>
+                        <div class="carousel-caption d-none d-md-block">                   
+                        </div>
+                        <p><strong>Projeto:</strong>Guarda Dados,<strong>Detalhes:</strong><span id="flutter-details">App
+                            feito em Flutter para Android. Construído inicialmente para sanar necessidade de um comerciante
+                            local, e posteriormente adaptado para uso pessoal. Utiliza de algumas dependências como
+                            local-auth para biometria, shared-preferences para persistência de dados e provider para
+                            reutiliza widgets. </span></p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    <!-- end of projects -->
+
+    <!-- Works -->
+    
+    <div class="basic-4">
+        <div class="container"> 
+            <p id="others-projects">Outros Projetos</p>
+            <div class="row works">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://github.com/wilsondesouza/pew-pew" target="_blank">
+                                <img class="img-fluid" src="assets/images/unity.png" alt="Unity">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong><span id="unity-details">Jogo desenvolvido em Unity com C#. É um jogo de tiro 3D simples com um personagem que pode salta, mover, pegar itens e destruir inimigos. O jogo tem um menu simples e uma tela de "game over"</span></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
+                                <img class="img-fluid" src="assets/images/javascript.png" alt="JavaScript">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Projeto:</strong>Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong><span id="javascript-details">Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário.</span></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://github.com/wilsondesouza/chatgpt-clone" target="_blank">
+                                <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="React / Node">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong><span id="chat-details">Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</span></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->    
+            </div> <!-- end of row -->        
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+
+    <div class="container basic-5">
+        <p id="others-projects">Outros Projetos</p>
+        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <a href="https://github.com/wilsondesouza/pew-pew" target="_blank">
+                        <img class="img-fluid" src="assets/images/unity.png" alt="Unity">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">  
+                    </div>
+                    <p><strong>Projeto:</strong> Pew Pew, <strong>Detalhes:</strong><span id="unity-details">Jogo desenvolvido em Unity com C#. É um jogo de tiro 3D simples com um personagem que pode salta, mover, pegar itens e destruir inimigos. O jogo tem um menu simples e uma tela de "game over"</span></p>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://github.com/wilsondesouza/game-yu-gi-oh" target="_blank">
+                        <img class="img-fluid" src="assets/images/javascript.png" alt="JavaScript">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">  
+                    </div>
+                    <p><strong>Projeto:</strong>Yu-Gi-Oh! Jokenpo, <strong>Detalhes:</strong><span id="javascript-details">Webgame com construção simples de HTML, algumas estilizações CSS e programação em JavaScript para interagir com o usuário.</span></p>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="https://github.com/wilsondesouza/chatgpt-clone" target="_blank">
+                        <img class="img-fluid" src="assets/images/coming-soon.jpeg" alt="React / Node">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">                   
+                    </div>
+                    <p><strong>Projeto:</strong> Chat Gepeteco, <strong>Detalhes:</strong><span id="chat-details">Aplicação utilizando React para consumo da Api Open Ai para simular uma I.A generativa de textos.</span></p>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- end of works -->
+
+    <div id="maisProjetos">
+        <a href="https://github.com/wilsondesouza?tab=repositories" class="btn btn-primary py-3 px-4 me-5" id="mais-projetos">Mais Projetos</a>
+    </div>
+    </div>
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider --> 
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p id="contact-paragraph">Estou disponível para contato, seja para oportunidades profissionais ou para uma equipe de estudos e aperfeiçoamento.</p>
+            <div class="row"> 
+                <div class="col-lg-12">
+                    <div class="social-container">
+
+                        <span class="fa-stack">
+                            <a title="LinkedIn" href="https://www.linkedin.com/in/wilson-souza-junior-28702619b/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+  
+                        <span class="fa-stack">
+                            <a title="GitHub" href="https://github.com/wilsondesouza" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a title="Instagram" href="https://www.instagram.com/juni0r.s0uza/" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a title="Youtube" href="https://www.youtube.com/@juninholett/videos" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a title="Youtube" href="mailto:wilson.de.souza.junior@gmail.com" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small" id="developer">2023-2024 • Desenvolvido por @wilsondesouza</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small" id="host">Hospedado em GitHub Pages</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+        
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+
+    <!-- Embedded -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- Bootstrap -->
+    <script src="https://kit.fontawesome.com/754cc50534.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+
+    <!-- Personal -->
+    <script src="js/theme.js"></script> 
+    <script src="js/scripts.js"></script> 
+    <script src="main.js"></script>
 </body>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://kit.fontawesome.com/754cc50534.js" crossorigin="anonymous"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-<script src="main.js"></script>
+</html>
