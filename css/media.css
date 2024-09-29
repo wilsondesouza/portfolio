@@ -22,12 +22,20 @@ Table Of Contents:
 	body {
 		width: 370px !important;
 	}
+
+	.card-typing .words{
+		font-size: 1.15rem;
+	}
 }
 
 /* Max-width 375px */
 @media (max-width: 375px) {
 	.header {
 		height: 120%;
+	}
+
+	.card-typing .words{
+		font-size: 1.155rem;
 	}
 }
 
@@ -36,10 +44,14 @@ Table Of Contents:
 	.header {
 		height: 100%;
 	}
+
+	.card-typing .words{
+		font-size: 1.25rem;
+	}
 }
 
-/* Max-width 425px */
-@media (max-width: 425px) {
+/* Max-width 540px */
+@media (max-width: 540px) {
 	.navbar .social-icons {
 		padding-top: 2rem !important;
 		margin-left: 0rem !important;
@@ -47,6 +59,10 @@ Table Of Contents:
 
 	.navbar .social-icons a {
 		margin-left: .8rem !important;
+	}
+
+	.area-2 ul{
+		display: ruby;
 	}
 
 	.basic-4 {
@@ -67,14 +83,18 @@ Table Of Contents:
 }
 
 /*Width 425px */
-@media (min-width: 366px) {
+@media (min-width: 425px) {
 	.navbar .social-icons {
 		justify-content: center !important;
 	}
+
+	.card-typing .words{
+		font-size: 1.4rem;
+	}
 }
 
-/* Max-width 768px */
-@media (max-width: 768px) {
+/* Max-width 767px */
+@media (max-width: 767px) {
 
 	.navbar .social-icons {
 		display: flex;
@@ -123,6 +143,14 @@ Table Of Contents:
 	.dev {
 		display: none;
 	}
+
+	.header h1.display-3 {
+        width: auto;
+    }
+
+	.loader-typing {
+        justify-content: center;
+    }
 
 	div#buttons {
 		margin-left: 2rem;
@@ -263,16 +291,6 @@ Table Of Contents:
 		padding-bottom: 14rem;
 		text-align: left;
 	}
-
-	/*#typing-text {
-		width: max-content;
-	}*/
-
-	/* Typing Text */
-
-	/*.typing-container {
-		position: absolute
-	}*/
 
 	/* Mobile Box */
 
@@ -482,7 +500,7 @@ Table Of Contents:
 
 	.mobile-box {
 		top: 55%;
-		left: 75%;
+		left: 80%;
 	}
 
 	.mobile {

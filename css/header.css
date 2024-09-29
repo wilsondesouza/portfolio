@@ -5,6 +5,7 @@ Table Of Contents:
 - Loading
 - Navigation
 - Header
+- Send Mail 
 ******************************************/
 
 /**********************/
@@ -127,11 +128,13 @@ body.loaded .content {
 	transition: all 0.2s ease;
 }
 
+
 .navbar .navbar-toggler {
 	padding: 0;
 	border: none;
 	font-size: 1.25rem;
 }
+
 
 /* Social Icons */
 
@@ -233,6 +236,7 @@ body.loaded .content {
 	transition-duration: .3s;
 }
 
+
 /******************/
 /*     Header     */
 /******************/
@@ -244,16 +248,14 @@ body.loaded .content {
 	text-align: center;
 }
 
-.header h1.display-3 {
-	color: #ffffff;
+.header h1.display-3, .header h3#name {
+	color: #ffffff !important;
 	/*background-size: cover;
 	background-clip: text;
 	-webkit-background-clip: text;*/
 }
 
 .card-typing {
-	background-color: var(--background-light);
-	;
 	padding: .2rem 2rem 0rem 2rem;
 	border-radius: 1.25rem;
 }
@@ -282,7 +284,7 @@ body.loaded .content {
 	display: block;
 	height: 100%;
 	padding-left: 8px;
-	color: #956afa;
+	color: #0d6efd;
 	animation: spin_4991 4s infinite;
 }
 
@@ -328,60 +330,6 @@ body.loaded .content {
 	}
 }
 
-/*#typing-text {
-	font-size: 1.1rem;
-	font-family: Arial, sans-serif;
-
-	-- Efeito da digitação --
-	display: inline-block;
-	color: white;
-	background: linear-gradient(to right, rgba(111, 191, 103, 1) 20%, rgb(32, 4, 158) 50%, rgba(231, 210, 13, 1) 80%, rgba(255, 214, 0, 1) 90%);
-	-- background: linear-gradient(to right, rgba(0,168,253),#fff 35%, #e00a95); --
-	background-size: 200% auto;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradient 3s linear infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 75%
-	}
-
-	50% {
-		background-position: 100% 50%
-	}
-
-	100% {
-		background-position: 0% 70%
-	}
-}
-
-.cursor {
-	bottom: 6px;
-	font-size: 1.3rem;
-	margin-top: -.2rem;
-	/* Ajuste para a posição do cursor */
-	left: 0;
-	color: rgba(111, 191, 103, 1);
-	animation: blink 0.7s infinite;
-	/* Animação do cursor piscando */
-}
-
-@keyframes blink {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}/*
-
 div#buttons {
 	display: flex;
 	flex-direction: column;
@@ -400,11 +348,7 @@ div#download {
 .header a,
 .header button,
 #download-button,
-#repositories
-
-/*,
-.typing-container*/
-	{
+#repositories {
 	position: relative;
 	padding: 10px 20px;
 	border-radius: 7px;
@@ -448,11 +392,7 @@ div#download {
 
 .header a::before,
 .header button::before,
-#download-button::before #repositories::before
-
-/*,
-.typing-container::before*/
-	{
+#download-button::before #repositories::before {
 	content: '';
 	display: block;
 	width: 0px;
@@ -501,13 +441,146 @@ div#download {
 .header a:active,
 .header button:active,
 #download-button:active,
-#repositories:active
-
-/*,
-.typing-container:active */
-	{
+#repositories:active {
 	box-shadow: 0 0 0 0 transparent;
 	-webkit-transition: box-shadow 0.2s ease-in;
 	-moz-transition: box-shadow 0.2s ease-in;
 	transition: box-shadow 0.2s ease-in;
+}
+
+/*********************/
+/*     Send Mail     */
+/*********************/
+#show-form {
+	background: transparent;
+	position: fixed;
+	bottom: 0%;
+	z-index: 2;
+	border: none;
+
+}
+
+#show-form:hover {
+	scale: 1.1;
+}
+
+.form-container {
+	position: fixed;
+	z-index: 2;
+	left: .5%;
+	bottom: 7%;
+
+	width: 400px;
+	background: linear-gradient(black, black) padding-box,
+		linear-gradient(60deg, transparent 35%, rgba(111, 191, 103, 1), rgba(255, 214, 0, 1)) border-box;
+	border: 2px solid transparent;
+	padding: 32px 24px;
+	font-size: 14px;
+	font-family: inherit;
+	color: white;
+	display: none;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	border-radius: 16px;
+	background-size: 200% 100%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.form-container button:active {
+	scale: 0.95;
+}
+
+.form-container .form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-container .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.form-container .form-group label {
+	display: block;
+	margin-bottom: 5px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.form-container .form-group input {
+	width: 100%;
+	padding: 12px 16px;
+	border-radius: 8px;
+	color: #fff;
+	font-family: inherit;
+	background-color: transparent;
+	border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+	width: 100%;
+	padding: 12px 16px;
+	border-radius: 8px;
+	resize: none;
+	color: #fff;
+	height: 96px;
+	border: 1px solid #414141;
+	background-color: transparent;
+	font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+	opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+	outline: none;
+	border-color: rgb(32, 4, 158);
+}
+
+.form-container .form-group textarea:focus {
+	outline: none;
+	border-color: rgb(32, 4, 158);
+}
+
+.form-container .form-submit-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	align-self: center;
+	font-family: inherit;
+	color: #717171;
+	font-weight: 600;
+	width: 40%;
+	background: #313131;
+	border: 1px solid #414141;
+	padding: 12px 16px;
+	font-size: inherit;
+	gap: 8px;
+	margin-top: 8px;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+	background-color: #fff;
+	border-color: #fff;
 }
