@@ -127,13 +127,11 @@ body.loaded .content {
 	transition: all 0.2s ease;
 }
 
-
 .navbar .navbar-toggler {
 	padding: 0;
 	border: none;
 	font-size: 1.25rem;
 }
-
 
 /* Social Icons */
 
@@ -235,7 +233,6 @@ body.loaded .content {
 	transition-duration: .3s;
 }
 
-
 /******************/
 /*     Header     */
 /******************/
@@ -247,8 +244,6 @@ body.loaded .content {
 	text-align: center;
 }
 
-
-
 .header h1.display-3 {
 	color: #ffffff;
 	/*background-size: cover;
@@ -256,15 +251,92 @@ body.loaded .content {
 	-webkit-background-clip: text;*/
 }
 
-#typing-text {
+.card-typing {
+	background-color: var(--background-light);
+	;
+	padding: .2rem 2rem 0rem 2rem;
+	border-radius: 1.25rem;
+}
+
+.loader-typing {
+	color: rgb(124, 124, 124);
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 40px;
+	padding: 10px 0px 0px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	border-radius: 8px;
+}
+
+.card-typing .words {
+	overflow: hidden;
+	position: relative;
+}
+
+.card-typing .word {
+	display: block;
+	height: 100%;
+	padding-left: 8px;
+	color: #956afa;
+	animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+	10% {
+		-webkit-transform: translateY(-102%);
+		transform: translateY(-102%);
+	}
+
+	25% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+
+	35% {
+		-webkit-transform: translateY(-202%);
+		transform: translateY(-202%);
+	}
+
+	50% {
+		-webkit-transform: translateY(-200%);
+		transform: translateY(-200%);
+	}
+
+	60% {
+		-webkit-transform: translateY(-302%);
+		transform: translateY(-302%);
+	}
+
+	75% {
+		-webkit-transform: translateY(-300%);
+		transform: translateY(-300%);
+	}
+
+	85% {
+		-webkit-transform: translateY(-402%);
+		transform: translateY(-402%);
+	}
+
+	100% {
+		-webkit-transform: translateY(-400%);
+		transform: translateY(-400%);
+	}
+}
+
+/*#typing-text {
 	font-size: 1.1rem;
 	font-family: Arial, sans-serif;
 
-	/* Efeito da digitação */
+	-- Efeito da digitação --
 	display: inline-block;
 	color: white;
 	background: linear-gradient(to right, rgba(111, 191, 103, 1) 20%, rgb(32, 4, 158) 50%, rgba(231, 210, 13, 1) 80%, rgba(255, 214, 0, 1) 90%);
-	/*background: linear-gradient(to right, rgba(0,168,253),#fff 35%, #e00a95);*/
+	-- background: linear-gradient(to right, rgba(0,168,253),#fff 35%, #e00a95); --
 	background-size: 200% auto;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -308,7 +380,7 @@ body.loaded .content {
 	100% {
 		opacity: 1;
 	}
-}
+}/*
 
 div#buttons {
 	display: flex;
@@ -328,8 +400,11 @@ div#download {
 .header a,
 .header button,
 #download-button,
-#repositories,
-.typing-container {
+#repositories
+
+/*,
+.typing-container*/
+	{
 	position: relative;
 	padding: 10px 20px;
 	border-radius: 7px;
@@ -353,7 +428,7 @@ div#download {
 .header a:hover,
 .header button:hover,
 #download-button:hover,
-#repositories:hover{
+#repositories:hover {
 	background: rgb(61, 106, 255);
 	box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
 	-webkit-transition: all 0.2s ease-out;
@@ -365,8 +440,7 @@ div#download {
 
 .header a:hover::before,
 .header button:hover::before,
-#download-button:hover::before
-#repositories:hover::before{
+#download-button:hover::before #repositories:hover::before {
 	-webkit-animation: sh02 0.5s 0s linear;
 	-moz-animation: sh02 0.5s 0s linear;
 	animation: sh02 0.5s 0s linear;
@@ -374,9 +448,11 @@ div#download {
 
 .header a::before,
 .header button::before,
-#download-button::before
-#repositories::before,
-.typing-container::before {
+#download-button::before #repositories::before
+
+/*,
+.typing-container::before*/
+	{
 	content: '';
 	display: block;
 	width: 0px;
@@ -425,8 +501,11 @@ div#download {
 .header a:active,
 .header button:active,
 #download-button:active,
-#repositories:active,
-.typing-container:active {
+#repositories:active
+
+/*,
+.typing-container:active */
+	{
 	box-shadow: 0 0 0 0 transparent;
 	-webkit-transition: box-shadow 0.2s ease-in;
 	-moz-transition: box-shadow 0.2s ease-in;

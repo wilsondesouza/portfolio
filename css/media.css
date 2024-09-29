@@ -264,15 +264,15 @@ Table Of Contents:
 		text-align: left;
 	}
 
-	#typing-text {
+	/*#typing-text {
 		width: max-content;
-	}
+	}*/
 
 	/* Typing Text */
 
-	.typing-container {
+	/*.typing-container {
 		position: absolute
-	}
+	}*/
 
 	/* Mobile Box */
 

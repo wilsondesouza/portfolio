@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Função para exibir o texto letra por letra
-function typeText(texto) {
+/*function typeText(texto) {
     const typingTextElement = document.getElementById("typing-text");
     let index = 0;
 
@@ -30,7 +30,7 @@ function typeText(texto) {
         setTimeout(addText, 3000);
     }
 }
-typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
+typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");*/
 
 // Alterar idioma entre Português e Inglês
 // Change language between Portuguese and English
@@ -41,6 +41,11 @@ const inicioNav = document.getElementById('inicio-nav');
 const sobreNav = document.getElementById('sobre-nav');
 const projetosNav = document.getElementById('projetos-nav');
 const contatoNav = document.getElementById('contato-nav');
+const webDev = document.getElementById('web-dev');
+const webDev2 = document.getElementById('web-dev2');
+const pythonDev = document.getElementById('python-dev');
+const iot = document.getElementById('iot');
+const engineer = document.getElementById('engineer');
 const curriculum = document.getElementById('curriculum');
 const hello = document.getElementById('hello');
 const aboutParagraph = document.getElementById('about-paragraph');
@@ -68,19 +73,28 @@ const host = document.getElementById('host');
 
 // Guardar texto original (Em português)
 // Save original text (In Portuguese)
-const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
+const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, webDev.textContent, webDev2.textContent, pythonDev.textContent, 
+    iot.textContent, engineer.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, 
+    certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, 
+    projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, 
+    javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
 
 // Alterar conteúdo dos textos parar inglês
 // Change texts content to English
 function alterarConteudo() {
-    const typingTextElement = document.getElementById("typing-text");
+    /*const typingTextElement = document.getElementById("typing-text");
     typingTextElement.textContent = "";
-    typeText("Mobile & Front-End Developer   |   Computer Engineer.");
+    typeText("Mobile & Front-End Developer   |   Computer Engineer.");*/
 
     inicioNav.textContent = 'Home';
     sobreNav.textContent = 'About';
     projetosNav.textContent = 'Projects';
     contatoNav.textContent = 'Contact';
+    webDev.textContent = 'Web Developer';
+    webDev2.textContent = 'Web Developer';
+    pythonDev.textContent = 'Python Developer';
+    iot.textContent = 'IoT Engineer';
+    engineer.textContent = 'Computer Engineer';
     curriculum.href = 'assets/curriculum/wilsonsouzajunior_english.pdf';
     hello.textContent = 'Hello, my name is Wilson';
     aboutParagraph.innerHTML = 'Briefly, I can say that I consider myself an organized and systematic person, ethical and professional, investigative, conventional and realistic (References to the Holland test).<br><br> Because of this, I decided to make a career transition to one that better suits my profile, and so I decided to enter the IT area when I started my studies in Computer Engineering. <br><br> Since then, I have constantly sought new knowledge about the various technologies in the area, always qualifying myself through certificates. And to put the acquired skills into practice, I seek an internship, to also learn new skills and tools with the intention of developing my career.';
