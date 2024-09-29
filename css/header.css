@@ -84,7 +84,6 @@ body.loaded .content {
 	display: block;
 }
 
-
 /**********************/
 /*     Navigation     */
 /**********************/
@@ -92,23 +91,6 @@ body.loaded .content {
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
-}
-
-.navbar .navbar-brand {
-	padding-top: 0.125rem;
-	padding-bottom: 0.125rem;
-}
-
-.navbar .logo-image img {
-	width: 118px;
-	height: 36px;
-}
-
-.navbar .logo-text {
-	font-weight: 700;
-	font-size: 1.875rem;
-	line-height: 1rem;
-	text-decoration: none;
 }
 
 .offcanvas-collapse {
@@ -265,16 +247,13 @@ body.loaded .content {
 	text-align: center;
 }
 
+
+
 .header h1.display-3 {
 	color: #ffffff;
 	/*background-size: cover;
 	background-clip: text;
 	-webkit-background-clip: text;*/
-}
-
-.header .h1-large {
-	margin-bottom: 1.75rem;
-	color: #ffffff;
 }
 
 #typing-text {
@@ -306,7 +285,6 @@ body.loaded .content {
 	}
 }
 
-
 .cursor {
 	bottom: 6px;
 	font-size: 1.3rem;
@@ -331,7 +309,6 @@ body.loaded .content {
 		opacity: 1;
 	}
 }
-
 
 div#buttons {
 	display: flex;
@@ -376,8 +353,7 @@ div#download {
 .header a:hover,
 .header button:hover,
 #download-button:hover,
-#repositories:hover,
-.typing-container:hover {
+#repositories:hover{
 	background: rgb(61, 106, 255);
 	box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
 	-webkit-transition: all 0.2s ease-out;
@@ -389,9 +365,8 @@ div#download {
 
 .header a:hover::before,
 .header button:hover::before,
-#download-button:hover::before,
-#repositories:hover::before,
-.typing-container:hover::before {
+#download-button:hover::before
+#repositories:hover::before{
 	-webkit-animation: sh02 0.5s 0s linear;
 	-moz-animation: sh02 0.5s 0s linear;
 	animation: sh02 0.5s 0s linear;
@@ -399,7 +374,7 @@ div#download {
 
 .header a::before,
 .header button::before,
-#download-button::before,
+#download-button::before
 #repositories::before,
 .typing-container::before {
 	content: '';
@@ -435,6 +410,18 @@ div#download {
 	}
 }
 
+#download:hover,
+.dropdown-toggle:hover,
+.icons-container img:hover {
+	transform: scale(1.1);
+}
+
+.dropdown-menu.show {
+	display: block;
+	background-color: transparent;
+	border: none;
+}
+
 .header a:active,
 .header button:active,
 #download-button:active,
@@ -444,10 +431,4 @@ div#download {
 	-webkit-transition: box-shadow 0.2s ease-in;
 	-moz-transition: box-shadow 0.2s ease-in;
 	transition: box-shadow 0.2s ease-in;
-}
-
-.dropdown-menu.show {
-	display: block;
-	background-color: transparent;
-	border: none;
 }

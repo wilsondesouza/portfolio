@@ -5,7 +5,6 @@ Table Of Contents:
 - Themes (Light and Dark)
 ******************************************/
 
-
 /* Theme Toggle Button */
 #theme-toggle-button {
 	font-size: 17px;
@@ -95,8 +94,6 @@ p, a, a:hover, h2, h3, h4, h5, h6 {
 .navbar, nav.navbar.navbar-expand-lg.fixed-top.navbar-dark  {
 	background-color: var(--navBarColor-dark);
 	box-shadow: 0 1px 6px 0 #0d6efd, 1px 1px 10px #0d6efd inset;
-	backdrop-filter: blur(2px);
-	
 }
 
 div#navbarsExampleDefault {
@@ -107,7 +104,6 @@ div#navbarsExampleDefault {
 	color: var(--text-dark);
 }
 
-
 .navbar .nav-item .nav-link {
 	color: var(--text-dark);
 }
@@ -116,9 +112,6 @@ div#navbarsExampleDefault {
 .navbar .nav-item .nav-link.active {
 	color: var(--backgroundButton-dark-hover);
 }
-
-
-
 
 /*****************/
 /*     About     */
@@ -142,7 +135,6 @@ div#navbarsExampleDefault {
 .split h5, .split h6 {
 	color: var(--text-light)
 }
-
 
 /********************/
 /*     Projects     */
