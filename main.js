@@ -30,7 +30,7 @@ function typeText(texto) {
         setTimeout(addText, 3000);
     }
 }
-typeText("Desenvolvedor   /   Engenheiro da Computação.");
+typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
 
 // Alterar idioma entre Português e Inglês
 // Change language between Portuguese and English
@@ -65,23 +65,17 @@ const contactParagraph = document.getElementById('contact-paragraph');
 const developer = document.getElementById('developer');
 const host = document.getElementById('host');
 
-// Captar ID dos botões de alterar idioma
-// Capture buttons ID to change language
-const botaoMudar = document.getElementById('english');
-const botaoRestaurar = document.getElementById('portuguese');
-const botaoIdioma = document.getElementById('botãoIdioma');
-const flag = document.getElementById('flag');
 
 // Guardar texto original (Em português)
 // Save original text (In Portuguese)
-const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent,];
+const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
 
 // Alterar conteúdo dos textos parar inglês
 // Change texts content to English
 function alterarConteudo() {
     const typingTextElement = document.getElementById("typing-text");
     typingTextElement.textContent = "";
-    typeText("Developer   /   Computer Engineer.");
+    typeText("Mobile & Front-End Developer   |   Computer Engineer.");
 
     inicioNav.textContent = 'Home';
     sobreNav.textContent = 'About';
@@ -117,7 +111,7 @@ function alterarConteudo() {
 function restaurarConteudo() {
     const typingTextElement = document.getElementById("typing-text");
     typingTextElement.textContent = "";
-    typeText("Desenvolvedor   /   Engenheiro da Computação.");
+    typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
 
     inicioNav.textContent = "Início";
     sobreNav.textContent = conteudoOriginal[1];
@@ -148,32 +142,71 @@ function restaurarConteudo() {
     host.textContent = conteudoOriginal[26];
 }
 
+
+// Captar ID dos botões de alterar idioma
+// Capture buttons ID to change language
+const botaoMudar = document.getElementById('english');
+const botaoRestaurar = document.getElementById('portuguese');
+const botaoIdioma = document.getElementById('botãoIdioma');
+const botãoTranslate = document.getElementById('botãoTranslate');
+
+const svg = document.getElementById('meu-svg');
+const svg2 = document.getElementById('meu-svg2');
+const path = svg.getElementById('meu-path');
+const path2 = svg2.getElementById('meu-path2');
+
 // Botão Mudar
 botaoMudar.addEventListener('click', function () {
     if (inicioNav.textContent === "Início") {
-        flag.src = "assets/images/brasil.png";
+        path.setAttribute('fill', 'url(#gradiente-2)');
+        botaoIdioma.setAttribute('data-social', 'translate2');
+        path2.setAttribute('fill', 'url(#gradiente-4)');
+        botãoTranslate.setAttribute('class', 'translate2');
+        
         alterarConteudo();
-    } 
+    }
 });
 
 // Botão Restaurar
 botaoRestaurar.addEventListener('click', function () {
     if (inicioNav.textContent !== "Início") {
-        flag.src = "assets/images/estados-unidos.png";
+        path.setAttribute('fill', 'url(#gradiente-1)');
+        botaoIdioma.setAttribute('data-social', 'translate');
+        path2.setAttribute('fill', 'url(#gradiente-3)');
+        botãoTranslate.setAttribute('class', 'translate');
+        
         restaurarConteudo();
     }
 });
 
-// Botão Idioma
-botaoIdioma.addEventListener('click', function () {
+// Botão Idioma e Botão Translate
+function alternarIdioma() {
     if (inicioNav.textContent === "Início") {
-        flag.src = "assets/images/brasil.png";
+        path.setAttribute('fill', 'url(#gradiente-2)');
+        path2.setAttribute('fill', 'url(#gradiente-4)');
+        atualizarBotaoIdioma('translate2');
+        atualizarBotaoTranslate('translate2');
+        
         alterarConteudo();
     } else {
-        flag.src = "assets/images/estados-unidos.png";
+        path.setAttribute('fill', 'url(#gradiente-1)');
+        path2.setAttribute('fill', 'url(#gradiente-3)');
+        atualizarBotaoIdioma('translate');
+        atualizarBotaoTranslate('translate');
         restaurarConteudo();
     }
-});
+}
+
+function atualizarBotaoIdioma(classe) {
+    botaoIdioma.setAttribute('data-social', classe);
+}
+
+function atualizarBotaoTranslate(classe) {
+    botãoTranslate.setAttribute('class', classe);
+}
+
+botaoIdioma.addEventListener('click', alternarIdioma);
+botãoTranslate.addEventListener('click', alternarIdioma);
 
 /* Back To Top Button */
 // create the back to top button

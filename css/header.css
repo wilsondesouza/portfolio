@@ -1,0 +1,453 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Loading
+- Navigation
+- Header
+******************************************/
+
+/**********************/
+/*     Loading     */
+/**********************/
+.loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+
+}
+
+.loader {
+	background-color: white;
+	width: 100px;
+	height: 100px;
+	animation: spinning82341 1.7s linear infinite, hue 1s ease-in-out infinite;
+	text-align: center;
+	border-radius: 50px;
+	filter: blur(10px);
+	box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+
+}
+
+@keyframes spinning82341 {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes hue {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+/* Definindo a animação da onda */
+@keyframes pulse-animation {
+	0% {
+		transform: scale(0.8);
+		/* Diminui o tamanho */
+		opacity: 0.5;
+	}
+
+	50% {
+		transform: scale(1.2);
+		/* Aumenta o tamanho */
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(0.8);
+		/* Retorna ao tamanho inicial */
+		opacity: 0.5;
+	}
+}
+
+/* Oculta a tela de carregamento quando a página estiver pronta */
+body.loaded .loader-overlay {
+	display: none;
+}
+
+/* Exibe o conteúdo da página quando estiver pronta */
+body.loaded .content {
+	display: block;
+}
+
+
+/**********************/
+/*     Navigation     */
+/**********************/
+.navbar {
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0.875rem;
+}
+
+.navbar .navbar-brand {
+	padding-top: 0.125rem;
+	padding-bottom: 0.125rem;
+}
+
+.navbar .logo-image img {
+	width: 118px;
+	height: 36px;
+}
+
+.navbar .logo-text {
+	font-weight: 700;
+	font-size: 1.875rem;
+	line-height: 1rem;
+	text-decoration: none;
+}
+
+.offcanvas-collapse {
+	position: fixed;
+	top: 3.25rem;
+	/* adjusts the height between the top of the page and the offcanvas menu */
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	overflow-y: auto;
+	visibility: hidden;
+	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.offcanvas-collapse.open {
+	visibility: visible;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.navbar .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar .nav-item .nav-link {
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+
+.navbar .navbar-toggler {
+	padding: 0;
+	border: none;
+	font-size: 1.25rem;
+}
+
+
+/* Social Icons */
+
+.linked-in,
+.git-hub,
+.translate,
+.translate2,
+.insta-gram,
+.you-tube {
+	border: none;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: .4s;
+	cursor: pointer;
+	position: relative;
+	padding: 1rem;
+	display: none
+}
+
+.translate {
+	background: linear-gradient(90deg, #041E42 20%, #9b1c2c 100%);
+}
+
+.translate2 {
+	background: linear-gradient(90deg, #009b3a 20%, #ffd700 100%);
+}
+
+.linked-in {
+	background: #0274b3;
+}
+
+.git-hub {
+	background-color: var(--background-light);
+}
+
+.you-tube {
+	background: #FF0000;
+}
+
+.svgIcon,
+#meu-svg2 {
+	transition-duration: .3s;
+}
+
+.svgIcon path {
+	fill: var(--background-dark);
+}
+
+.insta-gram svg path {
+	fill: white
+}
+
+.text {
+	position: absolute;
+	color: var(--text-light);
+	width: 120px;
+	font-weight: 600;
+	opacity: 0;
+	transition-duration: .4s;
+}
+
+#botãoTranslate span {
+	color: white !important;
+}
+
+.linked-in:hover,
+.git-hub:hover,
+.translate:hover,
+.translate2:hover,
+.insta-gram:hover,
+.you-tube:hover {
+	width: 110px;
+	transition-duration: .4s;
+	border-radius: 30px;
+}
+
+.linked-in:hover .text,
+.git-hub:hover .text,
+.translate:hover .text,
+.translate2:hover .text,
+.insta-gram:hover .text,
+.you-tube:hover .text {
+	opacity: 1;
+	transition-duration: .4s;
+	text-align-last: center;
+}
+
+.linked-in:hover .svgIcon,
+.git-hub:hover .svgIcon,
+.translate:hover #meu-svg2,
+.translate2:hover #meu-svg2,
+.insta-gram:hover .svgIcon,
+.you-tube:hover .svgIcon {
+	opacity: 0;
+	transition-duration: .3s;
+}
+
+
+/******************/
+/*     Header     */
+/******************/
+.header {
+	padding-top: 7rem;
+	padding-bottom: 5.5rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../assets/images/header-background.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.header h1.display-3 {
+	color: #ffffff;
+	/*background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;*/
+}
+
+.header .h1-large {
+	margin-bottom: 1.75rem;
+	color: #ffffff;
+}
+
+#typing-text {
+	font-size: 1.1rem;
+	font-family: Arial, sans-serif;
+
+	/* Efeito da digitação */
+	display: inline-block;
+	color: white;
+	background: linear-gradient(to right, rgba(111, 191, 103, 1) 20%, rgb(32, 4, 158) 50%, rgba(231, 210, 13, 1) 80%, rgba(255, 214, 0, 1) 90%);
+	/*background: linear-gradient(to right, rgba(0,168,253),#fff 35%, #e00a95);*/
+	background-size: 200% auto;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 75%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 70%
+	}
+}
+
+
+.cursor {
+	bottom: 6px;
+	font-size: 1.3rem;
+	margin-top: -.2rem;
+	/* Ajuste para a posição do cursor */
+	left: 0;
+	color: rgba(111, 191, 103, 1);
+	animation: blink 0.7s infinite;
+	/* Animação do cursor piscando */
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+div#buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Botões*/
+div#download {
+	padding-bottom: 1rem;
+}
+
+#curriculum svg {
+	margin-right: .5rem;
+}
+
+.header a,
+.header button,
+#download-button,
+#repositories,
+.typing-container {
+	position: relative;
+	padding: 10px 20px;
+	border-radius: 7px;
+	border: 1px solid rgb(61, 106, 255);
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	background: var(--background-light);
+	color: var(--text-light);
+	overflow: hidden;
+	box-shadow: 0 0 0 0 transparent;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: rgba(51, 65, 252, 0.2) 0 15px 30px -5px;
+	display: flex;
+}
+
+.header a:hover,
+.header button:hover,
+#download-button:hover,
+#repositories:hover,
+.typing-container:hover {
+	background: rgb(61, 106, 255);
+	box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	color: white;
+	animation-play-state: running;
+}
+
+.header a:hover::before,
+.header button:hover::before,
+#download-button:hover::before,
+#repositories:hover::before,
+.typing-container:hover::before {
+	-webkit-animation: sh02 0.5s 0s linear;
+	-moz-animation: sh02 0.5s 0s linear;
+	animation: sh02 0.5s 0s linear;
+}
+
+.header a::before,
+.header button::before,
+#download-button::before,
+#repositories::before,
+.typing-container::before {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 0%;
+	opacity: 0;
+	background: #fff;
+	box-shadow: 0 0 50px 30px #fff;
+	-webkit-transform: skewX(-20deg);
+	-moz-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+	from {
+		opacity: 0;
+		left: 0%;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		left: 100%;
+	}
+}
+
+.header a:active,
+.header button:active,
+#download-button:active,
+#repositories:active,
+.typing-container:active {
+	box-shadow: 0 0 0 0 transparent;
+	-webkit-transition: box-shadow 0.2s ease-in;
+	-moz-transition: box-shadow 0.2s ease-in;
+	transition: box-shadow 0.2s ease-in;
+}
+
+.dropdown-menu.show {
+	display: block;
+	background-color: transparent;
+	border: none;
+}

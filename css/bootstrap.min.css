@@ -805,7 +805,7 @@ progress {
     .container,
     .container-md,
     .container-sm {
-        max-width: 720px
+        max-width: 768px
     }
 }
 
@@ -6924,7 +6924,6 @@ fieldset:disabled .btn {
     text-align: center;
     background: 0 0;
     border: 0;
-    opacity: .5;
     transition: opacity .15s ease
 }
 
@@ -8317,7 +8316,8 @@ fieldset:disabled .btn {
 }
 
 .d-flex {
-    display: flex !important
+    display: flex !important;
+    justify-content: center;
 }
 
 .d-inline-flex {

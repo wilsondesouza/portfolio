@@ -5,6 +5,64 @@ Table Of Contents:
 - Themes (Light and Dark)
 ******************************************/
 
+
+/* Theme Toggle Button */
+#theme-toggle-button {
+	font-size: 17px;
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	cursor: pointer;
+	display: flex;
+}
+
+#toggle {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked+svg #container {
+	fill: #2b4360;
+}
+
+#toggle:checked+svg #button {
+	transform: translate(28px, 2.333px);
+}
+
+#toggle:checked+svg #sun,
+#moon {
+	opacity: 0;
+}
+
+#toggle:checked+svg #moon,
+#sun {
+	opacity: 1;
+}
+
+#toggle:checked+svg #cloud,
+#stars {
+	opacity: 0;
+}
+
+#toggle:checked+svg #stars,
+#cloud {
+	opacity: 1;
+}
+
 /* Temas Claro e Escuro */
 
 :root {
@@ -20,12 +78,14 @@ Table Of Contents:
 	--split-background-dark: #2e3033;
 	--theme-toggle-white: white;
 	--theme-toggle-dark: gold;
+	--navBarColor-dark: rgba(36, 38, 42, 0.9);
+	--navBarColor-light: rgba(255, 255, 255, 0.9);
 }
 
 /**************************/
 /*     General Styles     */
 /**************************/
-p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outline-sm {
+p, a, a:hover, h2, h3, h4, h5, h6 {
 	color: var(--background-dark);
 }
 
@@ -33,16 +93,20 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 /*     Navigation     */
 /**********************/
 .navbar, nav.navbar.navbar-expand-lg.fixed-top.navbar-dark  {
-	background-color: var(--background-dark);
-	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
+	background-color: var(--navBarColor-dark);
+	box-shadow: 0 1px 6px 0 #0d6efd, 1px 1px 10px #0d6efd inset;
+	backdrop-filter: blur(2px);
+	
 }
-.navbar .logo-text, .navbar .fa-stack:hover .fa-stack-2x {
+
+div#navbarsExampleDefault {
+	background-color: transparent;
+}
+
+.navbar .logo-text {
 	color: var(--text-dark);
 }
 
-.offcanvas-collapse , .btn-outline-reg:hover, .btn-outline-lg:hover, .btn-outline-sm:hover{
-	background-color: var(--background-dark);
-}
 
 .navbar .nav-item .nav-link {
 	color: var(--text-dark);
@@ -52,27 +116,9 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 .navbar .nav-item .nav-link.active {
 	color: var(--backgroundButton-dark-hover);
 }
-.navbar .fa-stack-2x {
-	color: var(--backgroundButton-dark-hover);
-	transition: all 0.2s ease;
-}
-.navbar .fa-stack-1x {
-	color: var(--text-dark);
-	transition: all 0.2s ease;
-}
-.navbar .fa-stack:hover .fa-stack-1x {
-	color: var(--backgroundButton-dark-hover);
-}
 
-/*****************/
-/*  Home-Social  */
-/*****************/
-#theme-toggle {
-	color: var(--theme-toggle-white);
-}
-#botãoIdioma {
-	color: white;
-}
+
+
 
 /*****************/
 /*     About     */
@@ -104,7 +150,6 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 
 #projects h2, #projects h3{
 	color: var(--text-light);
-
 }
 
 /*****************/
@@ -114,17 +159,18 @@ p, a, a:hover, h2, h3, h4, h5, h6, .btn-outline-reg, .btn-outline-lg, .btn-outli
 	background-color: var(--background-light);
 }
 
+#mais-projetos:hover .button__icon-wrapper {
+	color: #0d6efd;
+}
+
 /******************/
 /*     Footer     */
 /******************/
 .footer {
 	background-color: var(--background-dark);
 }
-.footer .fa-stack, .footer .fa-stack:hover .fa-stack-2x, .footer p {
+.footer p {
 	color: var(--colorButton-dark-hover);
-}
-.footer .fa-stack-1x {
-	color: white
 }
 
 /*********************/
