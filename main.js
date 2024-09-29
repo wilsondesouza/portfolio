@@ -9,29 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, tempoExibicao);
 });
 
-// Função para exibir o texto letra por letra
-function typeText(texto) {
-    const typingTextElement = document.getElementById("typing-text");
-    let index = 0;
-
-    if (typingTextElement.textContent === texto) {
-        return; // Sai da função se o texto já estiver completo
-    }
-
-    // Função para adicionar o texto letra por letra
-    function addText() {
-        if (index < texto.length) {
-            typingTextElement.textContent += texto.charAt(index);
-            index++;
-            setTimeout(addText, 100);
-        }
-    }
-    if (typingTextElement.textContent !== texto) {
-        setTimeout(addText, 3000);
-    }
-}
-typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
-
 // Alterar idioma entre Português e Inglês
 // Change language between Portuguese and English
 
@@ -41,6 +18,11 @@ const inicioNav = document.getElementById('inicio-nav');
 const sobreNav = document.getElementById('sobre-nav');
 const projetosNav = document.getElementById('projetos-nav');
 const contatoNav = document.getElementById('contato-nav');
+const engineer = document.getElementById('engineer');
+const engineer2 = document.getElementById('engineer2');
+const iot = document.getElementById('iot');
+const webDev = document.getElementById('web-dev');
+const pythonDev = document.getElementById('python-dev');
 const curriculum = document.getElementById('curriculum');
 const hello = document.getElementById('hello');
 const aboutParagraph = document.getElementById('about-paragraph');
@@ -49,7 +31,6 @@ const education = document.getElementById('education');
 const certificates = document.getElementById('certificates');
 const engenharia = document.getElementById('engenharia');
 const logistica = document.getElementById('logistica');
-const devJava = document.getElementById('dev-java');
 const devFlutter = document.getElementById('dev-flutter');
 const projectsTitle = document.getElementById('projects-title');
 const projectsParagraph = document.getElementById('projects-paragraph');
@@ -65,22 +46,26 @@ const contactParagraph = document.getElementById('contact-paragraph');
 const developer = document.getElementById('developer');
 const host = document.getElementById('host');
 
-
 // Guardar texto original (Em português)
 // Save original text (In Portuguese)
-const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, certificates.textContent, engenharia.textContent, logistica.textContent, devJava.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
+const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, engineer.textContent, engineer2.textContent, 
+    iot.textContent, webDev.textContent, pythonDev.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent, 
+    certificates.textContent, engenharia.textContent, logistica.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML, 
+    pythonDetails.textContent, reactDetails.textContent, flutterDetails.textContent, othersProjects.textContent, unityDetails.textContent, javascriptDetails.textContent, 
+    chatDetails.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
 
 // Alterar conteúdo dos textos parar inglês
 // Change texts content to English
 function alterarConteudo() {
-    const typingTextElement = document.getElementById("typing-text");
-    typingTextElement.textContent = "";
-    typeText("Mobile & Front-End Developer   |   Computer Engineer.");
-
     inicioNav.textContent = 'Home';
     sobreNav.textContent = 'About';
     projetosNav.textContent = 'Projects';
     contatoNav.textContent = 'Contact';
+    engineer.textContent = 'Computer Engineer';
+    engineer2.textContent = 'Computer Engineer';
+    iot.textContent = 'IoT Engineer';
+    webDev.textContent = 'Web Developer';
+    pythonDev.textContent = 'Python Developer';
     curriculum.href = 'assets/curriculum/wilsonsouzajunior_english.pdf';
     hello.textContent = 'Hello, my name is Wilson';
     aboutParagraph.innerHTML = 'Briefly, I can say that I consider myself an organized and systematic person, ethical and professional, investigative, conventional and realistic (References to the Holland test).<br><br> Because of this, I decided to make a career transition to one that better suits my profile, and so I decided to enter the IT area when I started my studies in Computer Engineering. <br><br> Since then, I have constantly sought new knowledge about the various technologies in the area, always qualifying myself through certificates. And to put the acquired skills into practice, I seek an internship, to also learn new skills and tools with the intention of developing my career.';
@@ -89,7 +74,6 @@ function alterarConteudo() {
     certificates.textContent = 'Certificates';
     engenharia.textContent = 'Computer Engineering';
     logistica.textContent = 'Logistics';
-    devJava.textContent = 'Java development with Cloud';
     devFlutter.textContent = 'Mobile Development with Flutter';
     projectsTitle.textContent = 'Projects';
     projectsParagraph.innerHTML = 'Below I will leave some projects that I have already developed. From simple, practical, functional projects to the most complex. <br> Some projects were created to serve as an assessment for some courses, and others were made to assimilate and solidify my knowledge and skills, these being personal projects.';
@@ -109,39 +93,38 @@ function alterarConteudo() {
 // Retornar conteúdo dos textos parar português
 // Return texts content to Portuguese
 function restaurarConteudo() {
-    const typingTextElement = document.getElementById("typing-text");
-    typingTextElement.textContent = "";
-    typeText("Desenvolvedor Mobile & Front-End   |   Engenheiro da Computação.");
-
     inicioNav.textContent = "Início";
     sobreNav.textContent = conteudoOriginal[1];
     projetosNav.textContent = conteudoOriginal[2];
     contatoNav.textContent = conteudoOriginal[3];
-    curriculum.href = conteudoOriginal[4];
-    hello.textContent = conteudoOriginal[5];
-    aboutParagraph.innerHTML = conteudoOriginal[6];
-    freelance.textContent = conteudoOriginal[7];
-    education.textContent = conteudoOriginal[8];
-    certificates.textContent = conteudoOriginal[9];
-    engenharia.textContent = conteudoOriginal[10];
-    logistica.textContent = conteudoOriginal[11];
-    devJava.textContent = conteudoOriginal[12];
-    devFlutter.textContent = conteudoOriginal[13];
-    projectsTitle.textContent = conteudoOriginal[14];
-    projectsParagraph.innerHTML = conteudoOriginal[15];
-    pythonDetails.textContent = conteudoOriginal[16];
-    reactDetails.textContent = conteudoOriginal[17];
-    flutterDetails.textContent = conteudoOriginal[18];
-    othersProjects.textContent = conteudoOriginal[19];
-    unityDetails.textContent = conteudoOriginal[20];
-    javascriptDetails.textContent = conteudoOriginal[21];
-    chatDetails.textContent = conteudoOriginal[22];
-    maisProjetos.textContent = conteudoOriginal[23];
-    contactParagraph.textContent = conteudoOriginal[24];
-    developer.textContent = conteudoOriginal[25];
-    host.textContent = conteudoOriginal[26];
+    engineer.textContent = conteudoOriginal[4];
+    engineer2.textContent = conteudoOriginal[5];
+    iot.textContent = conteudoOriginal[6];
+    webDev.textContent = conteudoOriginal[7];
+    pythonDev.textContent = conteudoOriginal[8];
+    curriculum.href = conteudoOriginal[9];
+    hello.textContent = conteudoOriginal[10];
+    aboutParagraph.innerHTML = conteudoOriginal[11];
+    freelance.textContent = conteudoOriginal[12];
+    education.textContent = conteudoOriginal[13];
+    certificates.textContent = conteudoOriginal[14];
+    engenharia.textContent = conteudoOriginal[15];
+    logistica.textContent = conteudoOriginal[16];
+    devFlutter.textContent = conteudoOriginal[17];
+    projectsTitle.textContent = conteudoOriginal[18];
+    projectsParagraph.innerHTML = conteudoOriginal[19];
+    pythonDetails.textContent = conteudoOriginal[20];
+    reactDetails.textContent = conteudoOriginal[21];
+    flutterDetails.textContent = conteudoOriginal[22];
+    othersProjects.textContent = conteudoOriginal[23];
+    unityDetails.textContent = conteudoOriginal[24];
+    javascriptDetails.textContent = conteudoOriginal[25];
+    chatDetails.textContent = conteudoOriginal[26];
+    maisProjetos.textContent = conteudoOriginal[27];
+    contactParagraph.textContent = conteudoOriginal[28];
+    developer.textContent = conteudoOriginal[29];
+    host.textContent = conteudoOriginal[30];
 }
-
 
 // Captar ID dos botões de alterar idioma
 // Capture buttons ID to change language
@@ -162,7 +145,7 @@ botaoMudar.addEventListener('click', function () {
         botaoIdioma.setAttribute('data-social', 'translate2');
         path2.setAttribute('fill', 'url(#gradiente-4)');
         botãoTranslate.setAttribute('class', 'translate2');
-        
+
         alterarConteudo();
     }
 });
@@ -174,7 +157,7 @@ botaoRestaurar.addEventListener('click', function () {
         botaoIdioma.setAttribute('data-social', 'translate');
         path2.setAttribute('fill', 'url(#gradiente-3)');
         botãoTranslate.setAttribute('class', 'translate');
-        
+
         restaurarConteudo();
     }
 });
@@ -186,7 +169,7 @@ function alternarIdioma() {
         path2.setAttribute('fill', 'url(#gradiente-4)');
         atualizarBotaoIdioma('translate2');
         atualizarBotaoTranslate('translate2');
-        
+
         alterarConteudo();
     } else {
         path.setAttribute('fill', 'url(#gradiente-1)');
@@ -207,6 +190,63 @@ function atualizarBotaoTranslate(classe) {
 
 botaoIdioma.addEventListener('click', alternarIdioma);
 botãoTranslate.addEventListener('click', alternarIdioma);
+
+/* Enviar Mensagem */
+//create show form button
+const showForm = document.getElementById('show-form');
+const svgForm = document.getElementById('svg-form');
+
+const svgForm1 = `<svg id="show-form_svg" class="feather feather-message-square" fill="none" height="60" stroke="#0d6efd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`;
+const svgForm2 = `<svg id="show-form_svg class="feather feather-x-square" fill="none" height="60" stroke="#0d6efd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+    viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="2" ry="2" width="18" x="3" y="3"/><line x1="9" x2="15" y1="9" y2="15"/><line x1="15" x2="9" y1="9" y2="15"/></svg>`;
+
+showForm.addEventListener('click', function () {
+    if (svgForm.innerHTML.includes('path')) {
+        svgForm.innerHTML = svgForm2;
+        document.querySelector('.form-container').style.display = "flex";
+    }
+    else if (svgForm.innerHTML.includes('rect')) {
+        svgForm.innerHTML = svgForm1;
+        document.querySelector('.form-container').style.display = "none";
+    }
+});
+
+// create the send mail button
+const btn_mail = document.getElementById('button-mail');
+const form = document.getElementById('form')
+
+form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn_mail.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_gjog8lf';
+
+        emailjs.sendForm(serviceID, templateID, form)
+            .then(() => {
+                btn_mail.value = 'Enviado';
+                btn_mail.disabled = true;
+                btn_mail.style.cursor = 'no-drop'
+                setTimeout(() => {
+                    form.reset()
+                    btn_mail.value = 'Enviar';
+                    btn_mail.disabled = false;
+                    btn_mail.style.cursor = 'pointer'
+                }, 4000);
+            }, (err) => {
+                btn_mail.value = 'Erro';
+                btn_mail.disabled = true;
+                btn_mail.style.cursor = 'no-drop'
+                setTimeout(() => {
+                    form.reset()
+                    btn_mail.value = 'Enviar';
+                    btn_mail.disabled = false;
+                    btn_mail.style.cursor = 'pointer'
+                }, 4000);
+            });
+    });
 
 /* Back To Top Button */
 // create the back to top button

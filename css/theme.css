@@ -65,15 +65,15 @@ Table Of Contents:
 /* Temas Claro e Escuro */
 
 :root {
-    --background-light: white;
+    --background-light: #e0e0e0;
     --text-light: #24262a;
     --background-dark: #24262a;
-    --text-dark: #CECECE;
+    --text-dark: #e0e0e0;
     --backgroundButton-light-hover: green;
     --backgroundButton-dark-hover: #0d6efd;
     --colorButton-light-hover: #24262a;
     --colorButton-dark-hover: white;
-	--split-background-white: #f7f9fb;
+	--split-background-white: #ccc9c9;
 	--split-background-dark: #2e3033;
 	--theme-toggle-white: white;
 	--theme-toggle-dark: gold;
@@ -84,8 +84,17 @@ Table Of Contents:
 /**************************/
 /*     General Styles     */
 /**************************/
+
+body {
+	background-color: var(--background-light);
+}
+
 p, a, a:hover, h2, h3, h4, h5, h6 {
 	color: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--background-dark);
 }
 
 /**********************/
@@ -111,6 +120,14 @@ div#navbarsExampleDefault {
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
 	color: var(--backgroundButton-dark-hover);
+}
+
+/*****************/
+/*     Typing     */
+/*****************/
+.card-typing {
+	background-color: var(--background-light);
+	border: 1px solid rgb(61, 106, 255);
 }
 
 /*****************/
