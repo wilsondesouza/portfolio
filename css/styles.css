@@ -38,6 +38,10 @@ ul {
 	padding: 0.5rem;
 }
 
+.example-2 .icon-content.idioma {
+	padding-bottom: 2rem;
+}
+
 .example-2 .icon-content .tooltip {
 	position: absolute;
 	top: 100%;
@@ -617,7 +621,7 @@ a.back-to-top {
 	width: 42px;
 	height: 42px;
 	border-radius: 30px;
-	background: #0b36a8 url("../assets/images/up-arrow.png") no-repeat center 47%;
+	background: #0b36a8 url("../assets/images/up-arrow.avif") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
 }

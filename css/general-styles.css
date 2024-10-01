@@ -65,6 +65,10 @@ h6 {
 	font-family: var(--font-family);
 }
 
+video {
+	display: none;
+}
+
 .p-small {
 	font-size: 0.875rem;
 	line-height: 1.5rem;
