@@ -249,7 +249,7 @@ body.loaded .content {
 }
 
 .header h1.display-3, .header h3#name {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .card-typing {
