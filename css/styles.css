@@ -148,11 +148,99 @@ ul {
 	z-index: 0;
 }
 
+/**********************************/
+/*     About - Details Button     */
+/**********************************/
+
+.menu {
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--split-background-white);
+    text-align: center;
+}
+
+.link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: width 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        display: block;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+        transform-origin: center right;
+        background-color: #0d6efd;
+    }
+
+    &:hover,
+    &:focus {
+        outline: 0;
+        width: 130px;
+        background-color: #f0f0f0;
+
+        &:before,
+        .link-title {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.link-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
+    left: 18px;
+    position: absolute;
+	color: var(--background-dark);
+    svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.link-title {
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    transform-origin: center right;
+    display: block;
+    text-align: center;
+    text-indent: 28px;
+    width: 100%;
+	color: white;
+	text-decoration: underline;
+}
+
 /*****************/
 /*     About     */
 /*****************/
 .basic-1 {
-	padding: 2.75rem 0 8.50rem 0;
+	padding: 2rem 0 2rem 0;
 }
 
 .basic-1 .text-container {
@@ -160,12 +248,12 @@ ul {
 }
 
 #about-paragraph {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    unicode-bidi: isolate;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
+	unicode-bidi: isolate;
 }
 
 
@@ -183,13 +271,12 @@ ul {
 
 .col-lg-6.wow.fadeInUp {
 	display: grid;
-	justify-items: center;
 }
 
 .area-2 ul {
-    width: 420px;
-    display: flex;
-    flex-wrap: nowrap;
+	width: 420px;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 /*******************/
@@ -277,13 +364,13 @@ ul {
 
 button.card__button::after {
 	display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-bottom: .3em solid;
-    border-right: .3em solid transparent;
-    border-top: 0;
-    border-left: .3em solid transparent;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-bottom: .3em solid;
+	border-right: .3em solid transparent;
+	border-top: 0;
+	border-left: .3em solid transparent;
 }
 
 .card-projects .content p {
@@ -319,7 +406,6 @@ button.card__button::after {
 .card {
 	margin: 0rem 1rem 1rem;
 	width: 350px;
-	height: 100%;
 	overflow: hidden;
 	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	background-color: var(--background-dark);
@@ -430,6 +516,7 @@ a.card__button:hover,
 
 p#mais-projetos {
 	display: contents;
+	color: var(--background-dark);
 }
 
 .button__icon-wrapper {
@@ -474,9 +561,12 @@ p#mais-projetos {
 	text-align: center;
 }
 
-path, svg, g {
+path,
+svg,
+g {
 	transition: 0s;
 }
+
 .main {
 	display: flex;
 	flex-direction: column;
@@ -519,7 +609,7 @@ path, svg, g {
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	transition: 0.2s ease-in-out;
-	
+
 }
 
 
@@ -621,7 +711,7 @@ a.back-to-top {
 	width: 42px;
 	height: 42px;
 	border-radius: 30px;
-	background: #0b36a8 url("../assets/images/up-arrow.avif") no-repeat center 47%;
+	background: #0b36a8 url("../assets/images/up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
 }

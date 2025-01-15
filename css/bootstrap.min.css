@@ -424,7 +424,7 @@ button:not(:disabled) {
 }
 
 .gy-5 {
-    --bs-gutter-y: 3rem
+    --bs-gutter-y: 1.5rem
 }
 
 @media (min-width:576px) {
