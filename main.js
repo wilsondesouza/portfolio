@@ -67,7 +67,7 @@ const devFlutter = document.getElementById('dev-flutter');
 const projectsTitle = document.getElementById('projects-title');
 const projectsParagraph = document.getElementById('projects-paragraph');
 const pythonDetails = document.getElementById('python-details');
-const pythonDetails2 = document.getElementById('python-details-2');
+const javascriptDetails2 = document.getElementById('javascript-details2');
 const flutterDetails = document.getElementById('flutter-details');
 const othersProjects = document.getElementById('others-projects');
 const javascriptDetails = document.getElementById('javascript-details');
@@ -86,7 +86,7 @@ const host = document.getElementById('host');
 const conteudoOriginal = [inicioNav.textContent, sobreNav.textContent, projetosNav.textContent, contatoNav.textContent, engineer.textContent, engineer2.textContent,
 iot.textContent, webDev.textContent, pythonDev.textContent, curriculum.href, hello.textContent, aboutParagraph.innerHTML, freelance.textContent, education.textContent,
 certificates.textContent, certifications.textContent, engenharia.textContent, logistica.textContent, devFlutter.textContent, projectsTitle.textContent, projectsParagraph.innerHTML,
-pythonDetails.textContent, pythonDetails2.textContent, flutterDetails.textContent, othersProjects.textContent, javascriptDetails.textContent, reactDetails.textContent,
+pythonDetails.textContent, javascriptDetails2.textContent, flutterDetails.textContent, othersProjects.textContent, javascriptDetails.textContent, reactDetails.textContent,
 homeDetails.textContent, javascriptDetailClass.textContent, reactDetailClass.textContent, homeDetailClass.textContent, maisProjetos.textContent, contactParagraph.textContent, developer.textContent, host.textContent];
 
 // Alterar conteúdo dos textos parar inglês
@@ -114,7 +114,7 @@ function alterarConteudo() {
     projectsTitle.textContent = 'Projects';
     projectsParagraph.innerHTML = 'Below I will leave some projects that I have already developed. From simple, practical, functional projects to the most complex. <br> Some projects were created to serve as an assessment for some courses, and others were made to assimilate and solidify my knowledge and skills, these being personal projects.';
     pythonDetails.textContent = 'Desktop application programmed in Python using the Custom Tkinter library for the creation of the graphical interface. Dictionaries were used to search for and return values and lists for the generation of buttons.';
-    pythonDetails2.textContent = 'A small but powerful application capable of downloading videos from the main social networks such as Youtube, Instagram and Twitter. Contains graphical interface built with the customtkinter lib';
+    javascriptDetails2.textContent = 'Your browser\'s home page, with space to save your favorite shortcuts, well as a search bar and a clock with local time.';
     flutterDetails.textContent = 'Flutter app for Android. Initially built to meet the needs of a local entrepreneur, and later adapted for personal use. It uses some dependencies such as local-auth for biometrics, shared-preferences for data persistence, and provider for reusing widgets.';
     othersProjects.textContent = 'Others Projects';
     javascriptDetails.textContent = 'Set of websites developed with academic objectives to apply knowledge in HTML, CSS and JS';
@@ -154,7 +154,7 @@ function restaurarConteudo() {
     projectsTitle.textContent = conteudoOriginal[19];
     projectsParagraph.innerHTML = conteudoOriginal[20];
     pythonDetails.textContent = conteudoOriginal[21];
-    pythonDetails2.textContent = conteudoOriginal[22];
+    javascriptDetails2.textContent = conteudoOriginal[22];
     flutterDetails.textContent = conteudoOriginal[23];
     othersProjects.textContent = conteudoOriginal[24];
     javascriptDetails.textContent = conteudoOriginal[25];

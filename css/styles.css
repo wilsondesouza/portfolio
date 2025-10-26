@@ -327,7 +327,7 @@ ul {
 	padding: 0 15px;
 }
 
-.card-projects {
+/*.card-projects {
 	min-width: -moz-fit-content;
 	min-width: -webkit-fill-available;
 	min-width: fit-content;
@@ -340,6 +340,20 @@ ul {
 	border-radius: 20px;
 	color: #ffffff;
 	padding: 20px;
+}*/
+
+.card-projects {
+    /* antigo: height: 95%; */
+    height: auto;          /* evita dependência de altura do pai */
+    max-height: 560px;     /* ajuste conforme seu design */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    margin: 1rem;
+    background: #000814;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 20px;
 }
 
 .card-projects .h4 {
