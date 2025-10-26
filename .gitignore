@@ -159,4 +159,4 @@ Thumbs.db
 
 # Others
 *.txt
-assets/curriculum/*.docx
+*.docx
