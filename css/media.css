@@ -23,7 +23,7 @@ Table Of Contents:
 		width: 370px !important;
 	}
 
-	.card-typing .words{
+	.card-typing .words {
 		font-size: 1.15rem;
 	}
 }
@@ -34,7 +34,7 @@ Table Of Contents:
 		height: 120%;
 	}
 
-	.card-typing .words{
+	.card-typing .words {
 		font-size: 1.155rem;
 	}
 }
@@ -45,7 +45,7 @@ Table Of Contents:
 		height: 100%;
 	}
 
-	.card-typing .words{
+	.card-typing .words {
 		font-size: 1.25rem;
 	}
 }
@@ -61,7 +61,7 @@ Table Of Contents:
 		margin-left: .8rem !important;
 	}
 
-	.area-2 ul{
+	.area-2 ul {
 		display: ruby;
 	}
 
@@ -77,11 +77,15 @@ Table Of Contents:
 		display: none;
 	}
 
+	#javascript-image-2 {
+		content: url(https://i.ibb.co/wXwxN7H/home-page-mobile.png);
+	}
+
 	video {
 		display: flex !important;
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
 	}
 
 	#flutter-image {
@@ -95,7 +99,7 @@ Table Of Contents:
 		justify-content: center !important;
 	}
 
-	.card-typing .words{
+	.card-typing .words {
 		font-size: 1.4rem;
 	}
 }
@@ -115,9 +119,7 @@ Table Of Contents:
 }
 
 /*Width 768px */
-@media (width: 768px) {
-	
-}
+@media (width: 768px) {}
 
 /* Min-width 768px */
 @media (min-width: 768px) {
@@ -152,12 +154,12 @@ Table Of Contents:
 	}
 
 	.header h1.display-3 {
-        width: auto;
-    }
+		width: auto;
+	}
 
 	.loader-typing {
-        justify-content: center;
-    }
+		justify-content: center;
+	}
 
 	div#buttons {
 		margin-left: 2rem;
