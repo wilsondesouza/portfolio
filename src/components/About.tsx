@@ -14,9 +14,9 @@ export default function About({ t }: AboutProps) {
 
     const skills = {
         softSkills: [
-            { name: 'Scrum', img: '/assets/images/agil.avif' },
-            { name: 'Design Thinking', img: '/assets/images/design-thinking.avif' },
-            { name: 'Kanban', img: '/assets/images/kanban.avif' },
+            { name: 'Scrum', img: 'https://i.ibb.co/JR1ytsC9/agil.png' },
+            { name: 'Design Thinking', img: 'https://i.ibb.co/dJQXMNVr/design-thinking.png' },
+            { name: 'Kanban', img: 'https://i.ibb.co/8gc0FsHL/kanban.png' },
         ],
         cloud: [
             { name: 'AWS', img: 'https://camo.githubusercontent.com/ecb07957af8fa1dafd763103a2732a8c156a607bb4cd9f13fe98176f91246756/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f392f39332f416d617a6f6e5f5765625f53657276696365735f4c6f676f2e737667' },

@@ -34,7 +34,7 @@ export default function Projects({ t }: ProjectsProps) {
     const mainProjects = [
         {
             title: 'Descubra seu dano',
-            image: isMobile ? 'https://i.ibb.co/vxHZZWY6/descubraseudano-mobile.png' : '/assets/images/p1.avif',
+            image: isMobile ? 'https://i.ibb.co/vxHZZWY6/descubraseudano-mobile.png' : 'https://i.ibb.co/Kz9DZxp5/p1.png',
             description: t.projects.title === 'Projects'
                 ? 'Desktop application programmed in Python using the Custom Tkinter library for the creation of the graphical interface. Dictionaries were used to search for and return values and lists for the generation of buttons.'
                 : 'Aplicativo desktop programado em Python utilizando a biblioteca Custom Tkinter para a criação da interface gráfica. Foram utilizados dicionários para buscar e retornar valores e listas para a geração dos botões.',
@@ -73,7 +73,7 @@ export default function Projects({ t }: ProjectsProps) {
     const otherProjects = [
         {
             title: 'Projetos Front-End',
-            image: isMobile ? '/assets/images/fem1.avif' : '/assets/images/fe1.avif',
+            image: isMobile ? 'https://i.ibb.co/W4v7QxWz/fem1.png' : 'https://i.ibb.co/WWYVR8dy/fe1.png',
             description: t.projects.title === 'Projects'
                 ? 'Set of websites developed with academic objectives to apply knowledge in HTML, CSS and JS'
                 : 'Conjunto de sites desenvolvidos com objetivos acadêmicos de aplicar conhecimentos em HTML, CSS e JS',
@@ -82,7 +82,7 @@ export default function Projects({ t }: ProjectsProps) {
         },
         {
             title: 'Universo do Saber',
-            image: isMobile ? '/assets/images/rm6.avif' : '/assets/images/r6.avif',
+            image: isMobile ? 'https://i.ibb.co/rRTt4vsc/rm6.png' : 'https://i.ibb.co/wZqMNmVs/r6.png',
             description: t.projects.title === 'Projects'
                 ? 'Used React library to leave the site reactive and interactive. Pure JS to apply some logic in the Shopping Cart and changing Themes.'
                 : 'Utilizado biblioteca React para deixar o site reativo e interativo. JS puro para aplicar algumas lógicas no Carrinho de Compras e na alteração de Temas.',

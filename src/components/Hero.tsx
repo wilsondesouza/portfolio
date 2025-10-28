@@ -44,8 +44,8 @@ export default function Hero({ t, lang }: HeroProps) {
     }, [cards.length]);
 
     const cvUrl = lang === 'pt'
-        ? '/assets/curriculum/wilsonsouzajunior_portugues.pdf'
-        : '/assets/curriculum/wilsonsouzajunior_english.pdf';
+        ? 'https://github.com/wilsondesouza/portfolio/blob/main/assets/curriculum/wilsonsouzajunior_portugues.pdf'
+        : 'https://github.com/wilsondesouza/portfolio/blob/main/assets/curriculum/wilsonsouzajunior_english.pdf';
 
     const handlePrevCard = () => {
         setCurrentCard((prev) => (prev - 1 + cards.length) % cards.length);
