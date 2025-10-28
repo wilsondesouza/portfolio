@@ -1,6 +1,6 @@
 <div align="center">
 
-# � Portfólio Pessoal
+# 💻 Portfólio
 
 [![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge)](https://portfolio-wilsondesouza.vercel.app/)
 [![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
